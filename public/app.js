@@ -4,6 +4,9 @@ const detailView = $('#detail-view');
 const grid = $('#catalog-grid');
 const backButton = $('#back-button');
 const viewer = $('#image-viewer');
+const viewerViewport = $('#viewer-viewport');
+const viewerImage = $('#viewer-image');
+const viewerZoomControl = $('#viewer-zoom');
 const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
 const money = new Intl.NumberFormat('es-AR', { maximumFractionDigits: 0 });
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -20,6 +23,10 @@ let viewerItems = [];
 let viewerIndex = 0;
 let viewerTrigger = null;
 let savedBodyOverflow = '';
+let viewerScale = 1;
+let viewerPan = { x: 0, y: 0 };
+let viewerBaseSize = { width: 0, height: 0 };
+let viewerGesture = null;
 
 function syncTheme() {
   const theme = document.documentElement.dataset.theme;
@@ -248,13 +255,57 @@ $('.brand').addEventListener('click', event => {
 window.addEventListener('popstate', route);
 window.addEventListener('hashchange', route);
 
+function endViewerGesture() {
+  const gesture = viewerGesture;
+  viewerGesture = null;
+  viewerViewport.classList.remove('is-dragging');
+  if (gesture && viewerViewport.hasPointerCapture(gesture.pointerId)) {
+    viewerViewport.releasePointerCapture(gesture.pointerId);
+  }
+}
+
+function renderViewerTransform() {
+  const maxX = Math.max(0, (viewerBaseSize.width * viewerScale - viewerViewport.clientWidth) / 2);
+  const maxY = Math.max(0, (viewerBaseSize.height * viewerScale - viewerViewport.clientHeight) / 2);
+  viewerPan.x = Math.max(-maxX, Math.min(maxX, viewerPan.x));
+  viewerPan.y = Math.max(-maxY, Math.min(maxY, viewerPan.y));
+  viewerImage.style.transform = `translate(-50%, -50%) translate(${viewerPan.x}px, ${viewerPan.y}px) scale(${viewerScale})`;
+  viewerViewport.classList.toggle('is-zoomed', viewerScale > 1);
+}
+
+function fitViewerImage() {
+  const width = viewerViewport.clientWidth;
+  const height = viewerViewport.clientHeight;
+  if (!width || !height || !viewerImage.naturalWidth || !viewerImage.naturalHeight) return;
+  const fit = Math.min(width / viewerImage.naturalWidth, height / viewerImage.naturalHeight);
+  viewerBaseSize = { width: viewerImage.naturalWidth * fit, height: viewerImage.naturalHeight * fit };
+  viewerImage.style.width = `${viewerBaseSize.width}px`;
+  viewerImage.style.height = `${viewerBaseSize.height}px`;
+  renderViewerTransform();
+}
+
+function setViewerZoom(percent, resetPosition = false) {
+  endViewerGesture();
+  const value = Math.max(100, Math.min(300, Math.round(Number(percent) / 10) * 10 || 100));
+  const nextScale = value / 100;
+  viewerPan = resetPosition || nextScale === 1
+    ? { x: 0, y: 0 }
+    : { x: viewerPan.x * nextScale / viewerScale, y: viewerPan.y * nextScale / viewerScale };
+  viewerScale = nextScale;
+  viewerZoomControl.value = String(value);
+  viewerZoomControl.setAttribute('aria-valuetext', `${value} por ciento`);
+  $('#viewer-zoom-value').value = `${value}%`;
+  $('#viewer-zoom-reset').disabled = value === 100;
+  renderViewerTransform();
+}
+
 function updateViewer() {
+  setViewerZoom(100, true);
   const item = viewerItems[viewerIndex];
   $('#viewer-fabric').textContent = `${activeFabric.category} ${activeFabric.name}`;
   $('#viewer-title').textContent = item.title;
-  const image = $('#viewer-image');
-  image.src = item.src;
-  image.alt = item.alt;
+  viewerImage.src = item.src;
+  viewerImage.alt = item.alt;
   $('#viewer-count').textContent = `${viewerIndex + 1} / ${viewerItems.length}`;
   $('#viewer-prev').disabled = viewerIndex === 0;
   $('#viewer-next').disabled = viewerIndex === viewerItems.length - 1;
@@ -271,6 +322,7 @@ function openViewer(index, trigger) {
   savedBodyOverflow = document.body.style.overflow;
   document.body.style.overflow = 'hidden';
   viewer.showModal();
+  fitViewerImage();
   $('#viewer-close').focus();
 }
 
@@ -278,29 +330,57 @@ function closeViewer() {
   if (viewer.open) viewer.close();
 }
 viewer.addEventListener('close', () => {
+  setViewerZoom(100, true);
   document.body.style.overflow = savedBodyOverflow;
   viewerTrigger?.focus({ preventScroll: true });
 });
 $('#viewer-close').addEventListener('click', closeViewer);
 function moveViewer(direction) {
-  viewerIndex = Math.max(0, Math.min(viewerItems.length - 1, viewerIndex + direction));
+  const nextIndex = Math.max(0, Math.min(viewerItems.length - 1, viewerIndex + direction));
+  if (nextIndex === viewerIndex) return;
+  viewerIndex = nextIndex;
   updateViewer();
 }
 $('#viewer-prev').addEventListener('click', () => moveViewer(-1));
 $('#viewer-next').addEventListener('click', () => moveViewer(1));
-let touchStart = null;
-$('.viewer-stage').addEventListener('touchstart', event => {
-  if (event.touches.length === 1) touchStart = { x: event.touches[0].clientX, y: event.touches[0].clientY };
-}, { passive: true });
-$('.viewer-stage').addEventListener('touchend', event => {
-  if (!touchStart || !event.changedTouches.length) return;
-  const dx = event.changedTouches[0].clientX - touchStart.x;
-  const dy = event.changedTouches[0].clientY - touchStart.y;
+viewerZoomControl.addEventListener('input', () => setViewerZoom(viewerZoomControl.value));
+$('#viewer-zoom-reset').addEventListener('click', () => {
+  setViewerZoom(100, true);
+  viewerZoomControl.focus();
+});
+viewerImage.addEventListener('load', fitViewerImage);
+if ('ResizeObserver' in window) new ResizeObserver(fitViewerImage).observe(viewerViewport);
+else window.addEventListener('resize', fitViewerImage);
+
+viewerViewport.addEventListener('pointerdown', event => {
+  if (!event.isPrimary || event.button !== 0 || (viewerScale === 1 && event.pointerType === 'mouse')) return;
+  viewerGesture = { pointerId: event.pointerId, pointerType: event.pointerType, x: event.clientX, y: event.clientY, panX: viewerPan.x, panY: viewerPan.y, zoomed: viewerScale > 1 };
+  viewerViewport.setPointerCapture(event.pointerId);
+  if (viewerGesture.zoomed) {
+    viewerViewport.classList.add('is-dragging');
+    event.preventDefault();
+  }
+});
+viewerViewport.addEventListener('pointermove', event => {
+  if (!viewerGesture || event.pointerId !== viewerGesture.pointerId || !viewerGesture.zoomed) return;
+  viewerPan = { x: viewerGesture.panX + event.clientX - viewerGesture.x, y: viewerGesture.panY + event.clientY - viewerGesture.y };
+  renderViewerTransform();
+  event.preventDefault();
+});
+viewerViewport.addEventListener('pointerup', event => {
+  if (!viewerGesture || event.pointerId !== viewerGesture.pointerId) return;
+  const gesture = viewerGesture;
+  endViewerGesture();
+  if (gesture.zoomed || viewerScale > 1 || gesture.pointerType !== 'touch') return;
+  const dx = event.clientX - gesture.x;
+  const dy = event.clientY - gesture.y;
   if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.5) moveViewer(dx < 0 ? 1 : -1);
-  touchStart = null;
-}, { passive: true });
+});
+viewerViewport.addEventListener('pointercancel', endViewerGesture);
+viewerViewport.addEventListener('lostpointercapture', endViewerGesture);
 document.addEventListener('keydown', event => {
   if (viewer.open) {
+    if (event.target.closest('input, textarea, select, [contenteditable="true"]')) return;
     if (event.key === 'ArrowLeft') { event.preventDefault(); moveViewer(-1); }
     if (event.key === 'ArrowRight') { event.preventDefault(); moveViewer(1); }
     return;

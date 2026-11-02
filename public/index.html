@@ -63,7 +63,10 @@
       <div class="viewer-stage">
         <button id="viewer-prev" class="icon-button viewer-arrow" type="button" aria-label="Imagen anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7" /></svg></button>
         <div id="viewer-viewport" class="viewer-viewport">
-          <img id="viewer-image" alt="" draggable="false" />
+          <div id="viewer-image-stack" class="viewer-image-stack">
+            <img id="viewer-backlight-base" alt="" draggable="false" hidden />
+            <img id="viewer-image" alt="" draggable="false" />
+          </div>
         </div>
         <button id="viewer-next" class="icon-button viewer-arrow" type="button" aria-label="Imagen siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7" /></svg></button>
       </div>
@@ -73,6 +76,12 @@
         <output id="viewer-zoom-value" for="viewer-zoom" aria-live="off">100%</output>
         <button id="viewer-zoom-reset" type="button" aria-label="Restablecer zoom al 100 por ciento" disabled>Reiniciar</button>
         <p id="viewer-zoom-help" class="visually-hidden">Al ampliar, arrastrá la imagen para recorrerla. Usá las flechas del teclado sobre este control para ajustar el zoom.</p>
+      </div>
+      <div id="viewer-backlight-controls" class="viewer-backlight" hidden>
+        <label for="viewer-backlight">Intensidad del fondo</label>
+        <input id="viewer-backlight" type="range" min="0" max="100" step="1" value="100" aria-valuetext="100 por ciento" aria-describedby="viewer-backlight-help" disabled />
+        <output id="viewer-backlight-value" for="viewer-backlight" aria-live="off">100%</output>
+        <p id="viewer-backlight-help">Simulación ilustrativa</p>
       </div>
       <div class="viewer-footer"><span id="viewer-count"></span><span>Imagen ilustrativa</span></div>
     </dialog>

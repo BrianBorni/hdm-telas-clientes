@@ -5,8 +5,12 @@ const grid = $('#catalog-grid');
 const backButton = $('#back-button');
 const viewer = $('#image-viewer');
 const viewerViewport = $('#viewer-viewport');
+const viewerImageStack = $('#viewer-image-stack');
 const viewerImage = $('#viewer-image');
 const viewerZoomControl = $('#viewer-zoom');
+const viewerBacklightBase = $('#viewer-backlight-base');
+const viewerBacklightControls = $('#viewer-backlight-controls');
+const viewerBacklightControl = $('#viewer-backlight');
 const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
 const money = new Intl.NumberFormat('es-AR', { maximumFractionDigits: 0 });
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -103,6 +107,7 @@ function photoMarkup(item, index, isFeature = false) {
       <span class="zoom-cue">${zoom}</span>
     </button>
     <h${isFeature ? '3' : '2'} class="photo-title">${escapeHTML(item.title)}</h${isFeature ? '3' : '2'}>
+    ${item.backlightBase ? `<button class="backlight-open" type="button" data-image-index="${index}" aria-label="Ajustar la intensidad del fondo de ${escapeHTML(item.title)}">Ajustar fondo <span aria-hidden="true">↗</span></button>` : ''}
     ${isFeature ? `<p class="feature-description">${escapeHTML(item.description)}</p>` : ''}
   </article>`;
 }
@@ -269,7 +274,7 @@ function renderViewerTransform() {
   const maxY = Math.max(0, (viewerBaseSize.height * viewerScale - viewerViewport.clientHeight) / 2);
   viewerPan.x = Math.max(-maxX, Math.min(maxX, viewerPan.x));
   viewerPan.y = Math.max(-maxY, Math.min(maxY, viewerPan.y));
-  viewerImage.style.transform = `translate(-50%, -50%) translate(${viewerPan.x}px, ${viewerPan.y}px) scale(${viewerScale})`;
+  viewerImageStack.style.transform = `translate(-50%, -50%) translate(${viewerPan.x}px, ${viewerPan.y}px) scale(${viewerScale})`;
   viewerViewport.classList.toggle('is-zoomed', viewerScale > 1);
 }
 
@@ -279,8 +284,8 @@ function fitViewerImage() {
   if (!width || !height || !viewerImage.naturalWidth || !viewerImage.naturalHeight) return;
   const fit = Math.min(width / viewerImage.naturalWidth, height / viewerImage.naturalHeight);
   viewerBaseSize = { width: viewerImage.naturalWidth * fit, height: viewerImage.naturalHeight * fit };
-  viewerImage.style.width = `${viewerBaseSize.width}px`;
-  viewerImage.style.height = `${viewerBaseSize.height}px`;
+  viewerImageStack.style.width = `${viewerBaseSize.width}px`;
+  viewerImageStack.style.height = `${viewerBaseSize.height}px`;
   renderViewerTransform();
 }
 
@@ -299,6 +304,25 @@ function setViewerZoom(percent, resetPosition = false) {
   renderViewerTransform();
 }
 
+function setViewerBacklight(percent) {
+  const numeric = Number(percent);
+  const value = Number.isFinite(numeric) ? Math.max(0, Math.min(100, Math.round(numeric))) : 100;
+  viewerBacklightControl.value = String(value);
+  viewerBacklightControl.setAttribute('aria-valuetext', `${value} por ciento`);
+  $('#viewer-backlight-value').value = `${value}%`;
+  viewerImage.style.opacity = viewerBacklightControl.disabled ? '1' : String(value / 100);
+}
+
+function syncBacklightReady() {
+  const expected = viewerItems[viewerIndex]?.backlightBase;
+  if (!expected || viewerBacklightBase.getAttribute('src') !== expected) return;
+  const ready = viewerBacklightBase.complete && viewerBacklightBase.naturalWidth > 0;
+  viewerBacklightBase.hidden = !ready;
+  viewerBacklightControl.disabled = !ready;
+  viewerBacklightControls.setAttribute('aria-busy', String(!ready));
+  if (ready) setViewerBacklight(viewerBacklightControl.value);
+}
+
 function updateViewer() {
   setViewerZoom(100, true);
   const item = viewerItems[viewerIndex];
@@ -306,6 +330,19 @@ function updateViewer() {
   $('#viewer-title').textContent = item.title;
   viewerImage.src = item.src;
   viewerImage.alt = item.alt;
+  viewerBacklightControls.hidden = !item.backlightBase;
+  viewerBacklightControl.disabled = true;
+  viewerBacklightBase.hidden = true;
+  $('#viewer-backlight-help').textContent = 'Simulación ilustrativa';
+  setViewerBacklight(100);
+  if (item.backlightBase) {
+    viewerBacklightControls.setAttribute('aria-busy', 'true');
+    viewerBacklightBase.src = item.backlightBase;
+    syncBacklightReady();
+  } else {
+    viewerBacklightControls.removeAttribute('aria-busy');
+    viewerBacklightBase.removeAttribute('src');
+  }
   $('#viewer-count').textContent = `${viewerIndex + 1} / ${viewerItems.length}`;
   $('#viewer-prev').disabled = viewerIndex === 0;
   $('#viewer-next').disabled = viewerIndex === viewerItems.length - 1;
@@ -344,6 +381,16 @@ function moveViewer(direction) {
 $('#viewer-prev').addEventListener('click', () => moveViewer(-1));
 $('#viewer-next').addEventListener('click', () => moveViewer(1));
 viewerZoomControl.addEventListener('input', () => setViewerZoom(viewerZoomControl.value));
+viewerBacklightControl.addEventListener('input', () => setViewerBacklight(viewerBacklightControl.value));
+viewerBacklightBase.addEventListener('load', syncBacklightReady);
+viewerBacklightBase.addEventListener('error', () => {
+  if (!viewerItems[viewerIndex]?.backlightBase) return;
+  viewerBacklightControl.disabled = true;
+  viewerBacklightBase.hidden = true;
+  viewerBacklightControls.setAttribute('aria-busy', 'false');
+  setViewerBacklight(100);
+  $('#viewer-backlight-help').textContent = 'No se pudo cargar la simulación.';
+});
 $('#viewer-zoom-reset').addEventListener('click', () => {
   setViewerZoom(100, true);
   viewerZoomControl.focus();

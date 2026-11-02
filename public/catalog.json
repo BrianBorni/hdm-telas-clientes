@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "brand": { "name": "HDM", "logo": "assets/hdm-logo.png" },
+  "currency": "ARS",
+  "fabrics": [
+    {
+      "id": "square",
+      "name": "Square",
+      "category": "Microperforada",
+      "published": true,
+      "prices": { "shirt": 24000, "set": 43500 },
+      "cover": "assets/square/trama.webp",
+      "gallery": [
+        { "id": "trama", "title": "Trama", "src": "assets/square/trama.webp", "alt": "Trama Square blanca: cuadrados de tejido compacto separados por canales finos, alineados horizontalmente." },
+        { "id": "contraluz", "title": "A contraluz", "src": "assets/square/contraluz.webp", "alt": "Representación de la tela Square a contraluz, con más paso de luz entre sus cuadrados." },
+        { "id": "prenda", "title": "Detalle de prenda", "src": "assets/square/prenda.webp", "alt": "Detalle del dobladillo y la costura de una camiseta blanca de tela Square." }
+      ],
+      "features": [
+        { "id": "transpirabilidad", "title": "Transpirabilidad", "description": "Su trama favorece la ventilación.", "src": "assets/square/transpirabilidad.webp", "alt": "Macro de los canales finos entre los cuadrados de Square, con flechas que representan el paso de aire." },
+        { "id": "secado", "title": "Secado rápido", "description": "Tejido de secado rápido.", "src": "assets/square/secado.webp", "alt": "Dobladillo de una camiseta Square suspendido con una caída suave, como representación del secado al aire." },
+        { "id": "resistencia", "title": "Resistencia", "description": "Para uso deportivo intensivo.", "src": "assets/square/resistencia.webp", "alt": "Representación de Square bajo tensión diagonal, con la trama alargada y dos flechas indicando el estiramiento, sin manos." }
+      ],
+      "notes": ["Elasticidad media", "Puede traslucir", "Recomendada para calce suelto"]
+    }
+  ]
+}

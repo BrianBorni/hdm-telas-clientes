@@ -112,6 +112,24 @@ function photoMarkup(item, index, isFeature = false) {
   </article>`;
 }
 
+function fabricInformationMarkup(fabric) {
+  if (!fabric.details) return '';
+  const { description, feel, recommendedFor, considerations } = fabric.details;
+  const sections = [
+    ['Cómo se siente', feel],
+    ['Recomendada para', recommendedFor],
+    ['A tener en cuenta', considerations]
+  ];
+  return `<section class="fabric-information" aria-labelledby="fabric-information-title">
+    <h2 class="feature-heading" id="fabric-information-title">La tela en detalle</h2>
+    <p class="fabric-information-intro">${escapeHTML(description)}</p>
+    <div class="fabric-information-grid">${sections.map(([title, text]) => `<div class="fabric-information-item">
+      <h3>${escapeHTML(title)}</h3>
+      <p>${escapeHTML(text)}</p>
+    </div>`).join('')}</div>
+  </section>`;
+}
+
 function renderDetail(fabric) {
   galleryController?.abort();
   galleryController = new AbortController();
@@ -134,6 +152,7 @@ function renderDetail(fabric) {
       <h2 class="feature-heading" id="features-title">Características</h2>
       <div class="feature-grid">${fabric.features.map((item, index) => photoMarkup(item, fabric.gallery.length + index, true)).join('')}</div>
     </section>
+    ${fabricInformationMarkup(fabric)}
     <footer class="detail-footer">
       <div><p class="material-notes">${fabric.notes.map(note => `<span>${escapeHTML(note)}</span>`).join('')}</p>
       <p class="image-note">Imágenes ilustrativas del tejido.${fabric.features.some(item => ['resistencia', 'elasticidad'].includes(item.id)) ? ' El estiramiento representa la tela bajo tensión.' : ''}</p></div>

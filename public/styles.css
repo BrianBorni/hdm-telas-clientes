@@ -66,6 +66,13 @@
   .feature-section { margin-top: 48px; }
   .feature-heading { font-size: clamp(30px, 3vw, 46px); letter-spacing: -.045em; font-weight: 700; margin-bottom: 24px; }
   .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .fabric-information { margin-top: 56px; padding-top: 38px; border-top: 1px solid var(--line); }
+  .fabric-information .feature-heading { margin-bottom: 18px; }
+  .fabric-information-intro { max-width: 72ch; font-size: clamp(17px, 1.45vw, 21px); line-height: 1.6; letter-spacing: -.015em; }
+  .fabric-information-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; margin-top: 34px; }
+  .fabric-information-item { border-top: 1px solid var(--line); padding-top: 20px; }
+  .fabric-information-item h3 { font-size: 17px; font-weight: 700; letter-spacing: -.02em; margin-bottom: 10px; }
+  .fabric-information-item p { color: var(--muted); font-size: 15px; line-height: 1.7; max-width: 48ch; }
   .detail-footer { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 20px; }
   .material-notes { font-size: 14px; line-height: 1.7; }
   .material-notes span + span::before { content: ' · '; color: var(--muted); padding: 0 5px; }
@@ -210,6 +217,10 @@
   .feature-section { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
   .feature-heading { font-size: 31px; margin-bottom: 20px; }
   .feature-grid { grid-template-columns: 1fr; gap: 30px; }
+  .fabric-information { margin-top: 38px; padding-top: 28px; }
+  .fabric-information-grid { grid-template-columns: 1fr; gap: 24px; margin-top: 26px; }
+  .fabric-information-item { padding-top: 18px; }
+  .fabric-information-item p { max-width: none; font-size: 16px; }
   .feature-card .photo-button img { aspect-ratio: 1.5; }
   .feature-description { font-size: 14px; }
   .detail-footer { display: block; margin-top: 30px; padding-top: 20px; }

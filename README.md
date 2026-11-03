@@ -48,6 +48,8 @@ Usar una versión de Node compatible con `package.json` (18 o superior). No requ
 
 Los datos públicos están en **`public/catalog.json`**, dentro del arreglo `fabrics`. Allí se editan nombres, precios, descripciones, características y rutas de imágenes. Los precios se guardan como números en `prices.shirt` y `prices.set`, en pesos argentinos. Mantener la misma estructura del objeto de Square al agregar cada nueva tela.
 
+La sección escrita al pie de cada tela se edita en `details`: `description` es la presentación del material, `feel` describe tacto y calce, `recommendedFor` sus usos y `considerations` las limitaciones a tener en cuenta. Los textos están adaptados de la guía interna de HDM para clientes.
+
 Para incorporar otra tela:
 
 1. Preparar sus imágenes aprobadas dentro de `public/assets/<id-de-la-tela>/`.

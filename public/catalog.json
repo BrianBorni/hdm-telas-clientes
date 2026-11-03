@@ -64,7 +64,13 @@
         "Uso ocasional",
         "Elasticidad limitada",
         "No recomendado para contacto intenso"
-      ]
+      ],
+      "details": {
+        "description": "Nuestra opción más económica, con buena definición y colores vivos en la sublimación. Una alternativa versátil para prendas de uso ocasional.",
+        "feel": "Liviana, con elasticidad limitada. Conserva la forma y no encoge en el uso habitual.",
+        "recommendedFor": "Eventos, torneos casuales, acciones publicitarias y uso casual. Conviene cuando priorizás el precio y no necesitás una prenda para usar de manera intensiva.",
+        "considerations": "Su durabilidad es media a baja y puede desgarrarse con tirones bruscos. Para uso constante, torneos largos o deportes de contacto, conviene elegir una tela más resistente."
+      }
     },
     {
       "id": "poc",
@@ -124,7 +130,13 @@
         "Elasticidad en una dirección",
         "Uso frecuente",
         "Recomendada para calce suelto"
-      ]
+      ],
+      "details": {
+        "description": "Microfibra de punto fino, sin una trama decorativa marcada. Combina comodidad y resistencia para entrenar y competir seguido, con colores vivos en la sublimación.",
+        "feel": "Suave al tacto y liviana. Absorbe la humedad corporal y tiene elasticidad media a alta en una sola dirección.",
+        "recommendedFor": "Entrenamientos frecuentes, torneos largos, deportes de contacto e indumentaria deportiva de uso intensivo. Es una opción para quienes priorizan suavidad y durabilidad.",
+        "considerations": "No ofrece el mismo estiramiento en alto y ancho que la Lycra. Para calzas o prendas muy pegadas al cuerpo que necesiten elasticidad en ambas direcciones, conviene otra opción."
+      }
     },
     {
       "id": "lycra",
@@ -184,7 +196,13 @@
         "Mayor peso",
         "Más abrigada",
         "Apta para prendas al cuerpo"
-      ]
+      ],
+      "details": {
+        "description": "Una opción especializada cuando la prioridad es la elasticidad. Su doble rebote permite que la tela se estire tanto en alto como en ancho.",
+        "feel": "Tiene más peso que las otras telas y una caída marcada. Es de secado rápido, aunque se siente más abrigada.",
+        "recommendedFor": "Prendas amoldadas al cuerpo, deportes de contacto y actividades de alto rendimiento en las que se busca libertad de movimiento y un calce ajustado.",
+        "considerations": "Es más pesada y calurosa que las demás opciones. Si tu prioridad es una prenda muy fresca o liviana, conviene comparar otras telas antes de elegirla."
+      }
     },
     {
       "id": "fifa",
@@ -244,7 +262,13 @@
         "Liviana",
         "Puede traslucir",
         "Recomendada para calce suelto"
-      ]
+      ],
+      "details": {
+        "description": "Tela técnica de nuestra línea premium, con pequeñas perforaciones que favorecen la ventilación. AFA y FIFA son opciones equivalentes en sus características.",
+        "feel": "Liviana, de secado rápido y con elasticidad media a alta. Combina transpirabilidad y durabilidad para el uso deportivo.",
+        "recommendedFor": "Básquet, deportes en espacios cerrados y prendas en las que se priorizan la ligereza y la ventilación. Funciona bien con un calce suelto.",
+        "considerations": "Puede traslucir por su trama microperforada. Si la prenda debe ser opaca o muy al cuerpo, conviene tener en cuenta esa transparencia antes de elegirla."
+      }
     },
     {
       "id": "dryfit",
@@ -304,7 +328,13 @@
         "Trama microperforada",
         "Puede traslucir",
         "Recomendada para calce suelto"
-      ]
+      ],
+      "details": {
+        "description": "Una opción de nuestra línea premium, con punto fino y pequeñas aberturas agrupadas.",
+        "feel": "Para elegir según el tacto, la elasticidad o la ventilación que buscás, consultanos y te ayudamos a comparar las muestras.",
+        "recommendedFor": "Camisetas y conjuntos deportivos. Te orientamos según el deporte, el calce y la frecuencia de uso antes de confirmar si es la opción indicada.",
+        "considerations": "Si necesitás una prenda opaca o de compresión, conviene confirmar esas condiciones antes de elegirla."
+      }
     },
     {
       "id": "square",
@@ -364,7 +394,13 @@
         "Elasticidad media",
         "Puede traslucir",
         "Recomendada para calce suelto"
-      ]
+      ],
+      "details": {
+        "description": "También conocida como Pixel. Su trama de pequeños cuadrados le da una textura distintiva: los centros son compactos y casi opacos, y la luz pasa principalmente por las juntas entre los cuadritos.",
+        "feel": "Cómoda al tacto, ventilada y de secado rápido. Su elasticidad es baja a media y tiene una caída suelta.",
+        "recommendedFor": "Deportes de alto rendimiento y prendas de uso intensivo cuando se busca ventilación, resistencia y una textura cuadriculada visible.",
+        "considerations": "Puede traslucir en las juntas de la trama. Va mejor con calce suelto; no la recomendamos para calzas, tops de alta compresión, remeras de compresión o prendas que deban ser opacas."
+      }
     },
     {
       "id": "nike",
@@ -424,7 +460,13 @@
         "Trama escalonada",
         "Elasticidad media",
         "Recomendada para calce suelto"
-      ]
+      ],
+      "details": {
+        "description": "Microperforada de gama alta, con una trama escalonada distintiva. Comparte prestaciones con Adidas; entre ambas, la diferencia principal es la textura y la apariencia de la prenda.",
+        "feel": "Cómoda al tacto, con buena ventilación y secado rápido. Tiene elasticidad baja a media y funciona mejor con una caída suelta.",
+        "recommendedFor": "Fútbol, uso profesional y categorías principales de clubes, como primera y reserva. Su durabilidad está orientada al uso frecuente y al desgaste deportivo.",
+        "considerations": "Puede traslucir entre sectores de la trama. No es la opción indicada para prendas de compresión ni para diseños que necesiten opacidad; conviene elegir un calce suelto."
+      }
     },
     {
       "id": "adidas",
@@ -484,7 +526,13 @@
         "Trama distintiva",
         "Elasticidad media",
         "Recomendada para calce suelto"
-      ]
+      ],
+      "details": {
+        "description": "Microperforada de gama alta, con una trama de bloques alternados que aporta una textura distintiva. Comparte prestaciones con Nike; podés elegir entre ambas según la apariencia que prefieras.",
+        "feel": "Cómoda al tacto, ventilada y de secado rápido. Su elasticidad es baja a media, por lo que se adapta mejor a prendas de caída suelta.",
+        "recommendedFor": "Fútbol profesional, entrenamientos frecuentes y categorías principales de clubes. Combina durabilidad con una trama visible para prendas de uso deportivo intensivo.",
+        "considerations": "Puede traslucir en los sectores abiertos de su trama. No la recomendamos para prendas de compresión ni cuando necesitás que la tela sea opaca."
+      }
     },
     {
       "id": "nba",
@@ -544,7 +592,13 @@
         "Especial para básquet",
         "Elasticidad baja a media",
         "Puede traslucir"
-      ]
+      ],
+      "details": {
+        "description": "Tela premium especializada en básquet. Se distingue por sus perforaciones más grandes y visibles, que favorecen una ventilación amplia.",
+        "feel": "Liviana, resistente y de secado rápido. Ayuda a alejar el sudor del cuerpo, con elasticidad baja a media.",
+        "recommendedFor": "Musculosas y conjuntos de básquet, especialmente para entrenamiento y competencia. Su trama está orientada a este tipo de indumentaria.",
+        "considerations": "Puede traslucir y no ofrece mucha elasticidad. No es la opción indicada si necesitás opacidad o un calce de compresión. Para otros deportes, consultanos antes de elegirla."
+      }
     }
   ]
 }

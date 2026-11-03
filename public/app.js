@@ -57,11 +57,27 @@ $('.skip-link').addEventListener('click', event => {
 });
 
 function imageMarkup(src, alt, { eager = false, sizes = '(max-width: 700px) calc(100vw - 44px), 33vw', className = '' } = {}) {
-  const extension = /\.webp$/i;
+  const extension = /\.webp(?=[?#]|$)/i;
   const responsive = extension.test(src)
     ? ` srcset="${escapeHTML(src.replace(extension, '-640.webp'))} 640w, ${escapeHTML(src.replace(extension, '-960.webp'))} 960w, ${escapeHTML(src)} 1536w" sizes="${sizes}"`
     : '';
   return `<img class="${className}" src="${escapeHTML(src)}"${responsive} alt="${escapeHTML(alt)}" width="1536" height="1024" loading="${eager ? 'eager' : 'lazy'}" decoding="async"${eager ? ' fetchpriority="high"' : ''} />`;
+}
+
+// Keep the catalog's filesystem paths unchanged; version only the URLs rendered.
+function mediaURL(src, revision) {
+  if (!revision || typeof src !== 'string' || !src.startsWith('assets/')) return src;
+  const [, path, query = '', hash = ''] = src.match(/^([^?#]+)(?:\?([^#]*))?(#.*)?$/);
+  const parameters = new URLSearchParams(query);
+  parameters.set('v', revision);
+  return `${path}?${parameters}${hash}`;
+}
+
+function withMediaRevision(fabric, revision) {
+  const photo = item => ({ ...item, src: mediaURL(item.src, revision),
+    ...(item.backlightBase ? { backlightBase: mediaURL(item.backlightBase, revision) } : {}) });
+  return { ...fabric, cover: mediaURL(fabric.cover, revision),
+    gallery: fabric.gallery.map(photo), features: fabric.features.map(photo) };
 }
 
 function priceMarkup(fabric) {
@@ -145,7 +161,7 @@ function renderDetail(fabric) {
     </div>
     <div class="gallery-thumbnails" role="group" aria-label="Elegir vista de la tela">
       ${fabric.gallery.map((item, index) => `<button class="gallery-thumbnail" type="button" data-slide="${index}" aria-pressed="${index === 0}" aria-label="Mostrar ${escapeHTML(item.title)}">
-        <img src="${escapeHTML(item.src.replace(/\.webp$/i, '-640.webp'))}" alt="" width="640" height="427" /><span>${escapeHTML(item.title)}</span>
+        <img src="${escapeHTML(item.src.replace(/\.webp(?=[?#]|$)/i, '-640.webp'))}" alt="" width="640" height="427" /><span>${escapeHTML(item.title)}</span>
       </button>`).join('')}
     </div>
     <section class="feature-section" aria-labelledby="features-title">
@@ -459,7 +475,7 @@ async function loadCatalog() {
     const response = await fetch('catalog.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    fabrics = data.fabrics.filter(fabric => fabric.published !== false);
+    fabrics = data.fabrics.filter(fabric => fabric.published !== false).map(fabric => withMediaRevision(fabric, data.mediaRevision));
     renderCatalog();
     route();
   } catch (error) {

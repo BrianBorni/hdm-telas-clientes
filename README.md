@@ -59,7 +59,7 @@ La aplicación usa rutas de imágenes relativas al sitio. Evitar espacios y tild
 
 ## Imágenes
 
-Las seis vistas de Square están en `public/assets/square/`:
+Cada tela tiene sus vistas en `public/assets/<id-de-la-tela>/`. El catálogo incluye Poliéster deportivo, POC, Lycra, AFA/FIFA, Dryfit, Square, Nike, Adidas y NBA. Importada se unificó con Dryfit y no aparece como otra opción.
 
 | Archivo base | Uso |
 | --- | --- |
@@ -69,6 +69,10 @@ Las seis vistas de Square están en `public/assets/square/`:
 | `transpirabilidad.webp` | Representación de ventilación |
 | `secado.webp` | Representación de secado rápido |
 | `resistencia.webp` | Tela bajo tensión, sin manos y con flechas |
+
+Las características se adaptan a cada material: POC incluye suavidad y ligereza; Lycra, doble rebote y caída; Poliéster, colores, ligereza y estabilidad de forma. No se atribuyen las mismas prestaciones a todas las telas.
+
+El ítem de galería a contraluz admite `backlightBase`, una imagen del mismo encuadre con fondo tenue. El control «Intensidad del fondo» mezcla esa vista con `src`, de 0 a 100%, sin cambiar el zoom. El porcentaje es una simulación visual de iluminación y no una medición de transparencia.
 
 Cada imagen tiene una versión completa de **1536 × 1024**, una variante `-960.webp` de **960 × 640** y otra `-640.webp` de **640 × 427**. Ejemplo: `trama.webp`, `trama-960.webp` y `trama-640.webp`. Conservar esta convención al sumar telas para facilitar la carga de imágenes según la pantalla.
 

@@ -7,6 +7,306 @@
   "currency": "ARS",
   "fabrics": [
     {
+      "id": "poliester",
+      "name": "Poliéster deportivo",
+      "category": "Tela deportiva",
+      "published": true,
+      "prices": {
+        "shirt": 17000,
+        "set": 32000
+      },
+      "cover": "assets/poliester/trama.webp",
+      "gallery": [
+        {
+          "id": "trama",
+          "title": "Trama",
+          "src": "assets/poliester/trama.webp",
+          "alt": "Trama blanca de Poliéster deportivo: punto fino continuo, sin grandes perforaciones."
+        },
+        {
+          "id": "contraluz",
+          "title": "A contraluz",
+          "src": "assets/poliester/contraluz.webp",
+          "alt": "Representación de Poliéster deportivo con una planta y una lámpara detrás de la tela.",
+          "backlightBase": "assets/poliester/contraluz-tenue.webp"
+        },
+        {
+          "id": "prenda",
+          "title": "Detalle de prenda",
+          "src": "assets/poliester/prenda.webp",
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en Poliéster deportivo."
+        }
+      ],
+      "features": [
+        {
+          "id": "color",
+          "title": "Colores vivos",
+          "src": "assets/poliester/color.webp",
+          "alt": "Detalle de poliéster sublimado en azul, negro y dorado, con el punto visible.",
+          "description": "Buena definición del diseño sublimado."
+        },
+        {
+          "id": "ligereza",
+          "title": "Liviana",
+          "src": "assets/poliester/ligereza.webp",
+          "alt": "Paño liviano de poliéster blanco suspendido con pliegues suaves.",
+          "description": "Para eventos, torneos casuales y uso publicitario."
+        },
+        {
+          "id": "estabilidad",
+          "title": "Conserva la forma",
+          "src": "assets/poliester/estabilidad.webp",
+          "alt": "Detalle limpio de una prenda de poliéster, con el dobladillo y su forma definidos.",
+          "description": "No encoge ni se deforma en el uso habitual."
+        }
+      ],
+      "notes": [
+        "Uso ocasional",
+        "Elasticidad limitada",
+        "No recomendado para contacto intenso"
+      ]
+    },
+    {
+      "id": "poc",
+      "name": "POC",
+      "category": "Microfibra",
+      "published": true,
+      "prices": {
+        "shirt": 21500,
+        "set": 39000
+      },
+      "cover": "assets/poc/trama.webp",
+      "gallery": [
+        {
+          "id": "trama",
+          "title": "Trama",
+          "src": "assets/poc/trama.webp",
+          "alt": "Trama blanca de POC: punto fino y compacto, sin trama decorativa."
+        },
+        {
+          "id": "contraluz",
+          "title": "A contraluz",
+          "src": "assets/poc/contraluz.webp",
+          "alt": "Representación de POC con una planta y una lámpara detrás de la tela.",
+          "backlightBase": "assets/poc/contraluz-tenue.webp"
+        },
+        {
+          "id": "prenda",
+          "title": "Detalle de prenda",
+          "src": "assets/poc/prenda.webp",
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en POC."
+        }
+      ],
+      "features": [
+        {
+          "id": "suavidad",
+          "title": "Suavidad",
+          "src": "assets/poc/suavidad.webp",
+          "alt": "Macro de la microfibra POC blanca en pliegues suaves, mostrando su punto fino.",
+          "description": "Suave y cómoda al contacto con la piel."
+        },
+        {
+          "id": "ligereza",
+          "title": "Liviana",
+          "src": "assets/poc/ligereza.webp",
+          "alt": "Microfibra POC blanca suspendida con una caída ligera.",
+          "description": "Comodidad para entrenar y competir."
+        },
+        {
+          "id": "resistencia",
+          "title": "Resistencia",
+          "src": "assets/poc/resistencia.webp",
+          "alt": "Microfibra POC bajo tensión moderada en una dirección, con dos flechas y sin manos.",
+          "description": "Para entrenamiento, torneos largos y uso intensivo."
+        }
+      ],
+      "notes": [
+        "Elasticidad en una dirección",
+        "Uso frecuente",
+        "Recomendada para calce suelto"
+      ]
+    },
+    {
+      "id": "lycra",
+      "name": "Lycra",
+      "category": "Microfibra",
+      "published": true,
+      "prices": {
+        "shirt": 23000,
+        "set": 41500
+      },
+      "cover": "assets/lycra/trama.webp",
+      "gallery": [
+        {
+          "id": "trama",
+          "title": "Trama",
+          "src": "assets/lycra/trama.webp",
+          "alt": "Trama blanca de Lycra: punto compacto y elástico."
+        },
+        {
+          "id": "contraluz",
+          "title": "A contraluz",
+          "src": "assets/lycra/contraluz.webp",
+          "alt": "Representación de Lycra con una planta y una lámpara detrás de la tela.",
+          "backlightBase": "assets/lycra/contraluz-tenue.webp"
+        },
+        {
+          "id": "prenda",
+          "title": "Detalle de prenda",
+          "src": "assets/lycra/prenda.webp",
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en Lycra."
+        }
+      ],
+      "features": [
+        {
+          "id": "elasticidad",
+          "title": "Doble rebote",
+          "src": "assets/lycra/elasticidad.webp",
+          "alt": "Microfibra Lycra estirada en dos ejes, con cuatro flechas y sin manos.",
+          "description": "Elasticidad en alto y ancho."
+        },
+        {
+          "id": "caida",
+          "title": "Caída",
+          "src": "assets/lycra/caida.webp",
+          "alt": "Pliegues amplios de microfibra Lycra blanca que ilustran su mayor peso y caída.",
+          "description": "Su mayor peso aporta una caída marcada."
+        },
+        {
+          "id": "secado",
+          "title": "Secado rápido",
+          "src": "assets/lycra/secado.webp",
+          "alt": "Dobladillo de microfibra Lycra suspendido como representación del secado al aire.",
+          "description": "Tejido de secado rápido."
+        }
+      ],
+      "notes": [
+        "Mayor peso",
+        "Más abrigada",
+        "Apta para prendas al cuerpo"
+      ]
+    },
+    {
+      "id": "fifa",
+      "name": "AFA / FIFA",
+      "category": "Microperforada",
+      "published": true,
+      "prices": {
+        "shirt": 23000,
+        "set": 41500
+      },
+      "cover": "assets/fifa/trama.webp",
+      "gallery": [
+        {
+          "id": "trama",
+          "title": "Trama",
+          "src": "assets/fifa/trama.webp",
+          "alt": "Trama blanca de AFA / FIFA: hileras de pequeños poros entre zonas de tejido compacto."
+        },
+        {
+          "id": "contraluz",
+          "title": "A contraluz",
+          "src": "assets/fifa/contraluz.webp",
+          "alt": "Representación de AFA / FIFA con una planta y una lámpara detrás de la tela.",
+          "backlightBase": "assets/fifa/contraluz-tenue.webp"
+        },
+        {
+          "id": "prenda",
+          "title": "Detalle de prenda",
+          "src": "assets/fifa/prenda.webp",
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en AFA / FIFA."
+        }
+      ],
+      "features": [
+        {
+          "id": "transpirabilidad",
+          "title": "Transpirabilidad",
+          "src": "assets/fifa/transpirabilidad.webp",
+          "alt": "Macro de AFA / FIFA con flechas ilustrativas del paso de aire por sus perforaciones.",
+          "description": "Su trama favorece la ventilación."
+        },
+        {
+          "id": "secado",
+          "title": "Secado rápido",
+          "src": "assets/fifa/secado.webp",
+          "alt": "Dobladillo de AFA / FIFA suspendido, como representación del secado al aire.",
+          "description": "Tejido de secado rápido."
+        },
+        {
+          "id": "resistencia",
+          "title": "Resistencia",
+          "src": "assets/fifa/resistencia.webp",
+          "alt": "AFA / FIFA bajo tensión moderada, con dos flechas y sin manos. El tejido conserva su estructura.",
+          "description": "Para uso deportivo intensivo."
+        }
+      ],
+      "notes": [
+        "Liviana",
+        "Puede traslucir",
+        "Recomendada para calce suelto"
+      ]
+    },
+    {
+      "id": "dryfit",
+      "name": "Dryfit",
+      "category": "Tela deportiva",
+      "published": true,
+      "prices": {
+        "shirt": 23000,
+        "set": 41500
+      },
+      "cover": "assets/dryfit/trama.webp",
+      "gallery": [
+        {
+          "id": "trama",
+          "title": "Trama",
+          "src": "assets/dryfit/trama.webp",
+          "alt": "Trama blanca de Dryfit: punto compacto con grupos de pequeñas ranuras."
+        },
+        {
+          "id": "contraluz",
+          "title": "A contraluz",
+          "src": "assets/dryfit/contraluz.webp",
+          "alt": "Representación de Dryfit con una planta y una lámpara detrás de la tela.",
+          "backlightBase": "assets/dryfit/contraluz-tenue.webp"
+        },
+        {
+          "id": "prenda",
+          "title": "Detalle de prenda",
+          "src": "assets/dryfit/prenda.webp",
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en Dryfit."
+        }
+      ],
+      "features": [
+        {
+          "id": "transpirabilidad",
+          "title": "Transpirabilidad",
+          "src": "assets/dryfit/transpirabilidad.webp",
+          "alt": "Macro de Dryfit con flechas ilustrativas del paso de aire por sus perforaciones.",
+          "description": "Su trama favorece la ventilación."
+        },
+        {
+          "id": "secado",
+          "title": "Secado rápido",
+          "src": "assets/dryfit/secado.webp",
+          "alt": "Dobladillo de Dryfit suspendido, como representación del secado al aire.",
+          "description": "Tejido de secado rápido."
+        },
+        {
+          "id": "resistencia",
+          "title": "Resistencia",
+          "src": "assets/dryfit/resistencia.webp",
+          "alt": "Dryfit bajo tensión moderada, con dos flechas y sin manos. El tejido conserva su estructura.",
+          "description": "Para uso deportivo intensivo."
+        }
+      ],
+      "notes": [
+        "Trama microperforada",
+        "Puede traslucir",
+        "Recomendada para calce suelto"
+      ]
+    },
+    {
       "id": "square",
       "name": "Square",
       "category": "Microperforada",
@@ -64,6 +364,186 @@
         "Elasticidad media",
         "Puede traslucir",
         "Recomendada para calce suelto"
+      ]
+    },
+    {
+      "id": "nike",
+      "name": "Nike",
+      "category": "Microperforada",
+      "published": true,
+      "prices": {
+        "shirt": 28000,
+        "set": 49500
+      },
+      "cover": "assets/nike/trama.webp",
+      "gallery": [
+        {
+          "id": "trama",
+          "title": "Trama",
+          "src": "assets/nike/trama.webp",
+          "alt": "Trama blanca de Nike: bloques escalonados y poros en hileras horizontales."
+        },
+        {
+          "id": "contraluz",
+          "title": "A contraluz",
+          "src": "assets/nike/contraluz.webp",
+          "alt": "Representación de Nike con una planta y una lámpara detrás de la tela.",
+          "backlightBase": "assets/nike/contraluz-tenue.webp"
+        },
+        {
+          "id": "prenda",
+          "title": "Detalle de prenda",
+          "src": "assets/nike/prenda.webp",
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en Nike."
+        }
+      ],
+      "features": [
+        {
+          "id": "transpirabilidad",
+          "title": "Transpirabilidad",
+          "src": "assets/nike/transpirabilidad.webp",
+          "alt": "Macro de Nike con flechas ilustrativas del paso de aire por sus perforaciones.",
+          "description": "Su trama favorece la ventilación."
+        },
+        {
+          "id": "secado",
+          "title": "Secado rápido",
+          "src": "assets/nike/secado.webp",
+          "alt": "Dobladillo de Nike suspendido, como representación del secado al aire.",
+          "description": "Tejido de secado rápido."
+        },
+        {
+          "id": "resistencia",
+          "title": "Resistencia",
+          "src": "assets/nike/resistencia.webp",
+          "alt": "Nike bajo tensión moderada, con dos flechas y sin manos. El tejido conserva su estructura.",
+          "description": "Para uso deportivo intensivo."
+        }
+      ],
+      "notes": [
+        "Trama escalonada",
+        "Elasticidad media",
+        "Recomendada para calce suelto"
+      ]
+    },
+    {
+      "id": "adidas",
+      "name": "Adidas",
+      "category": "Microperforada",
+      "published": true,
+      "prices": {
+        "shirt": 28000,
+        "set": 49500
+      },
+      "cover": "assets/adidas/trama.webp",
+      "gallery": [
+        {
+          "id": "trama",
+          "title": "Trama",
+          "src": "assets/adidas/trama.webp",
+          "alt": "Trama blanca de Adidas: bloques de punto y pequeños poros agrupados en una distribución alternada."
+        },
+        {
+          "id": "contraluz",
+          "title": "A contraluz",
+          "src": "assets/adidas/contraluz.webp",
+          "alt": "Representación de Adidas con una planta y una lámpara detrás de la tela.",
+          "backlightBase": "assets/adidas/contraluz-tenue.webp"
+        },
+        {
+          "id": "prenda",
+          "title": "Detalle de prenda",
+          "src": "assets/adidas/prenda.webp",
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en Adidas."
+        }
+      ],
+      "features": [
+        {
+          "id": "transpirabilidad",
+          "title": "Transpirabilidad",
+          "src": "assets/adidas/transpirabilidad.webp",
+          "alt": "Macro de Adidas con flechas ilustrativas del paso de aire por sus perforaciones.",
+          "description": "Su trama favorece la ventilación."
+        },
+        {
+          "id": "secado",
+          "title": "Secado rápido",
+          "src": "assets/adidas/secado.webp",
+          "alt": "Dobladillo de Adidas suspendido, como representación del secado al aire.",
+          "description": "Tejido de secado rápido."
+        },
+        {
+          "id": "resistencia",
+          "title": "Resistencia",
+          "src": "assets/adidas/resistencia.webp",
+          "alt": "Adidas bajo tensión moderada, con dos flechas y sin manos. El tejido conserva su estructura.",
+          "description": "Para uso deportivo intensivo."
+        }
+      ],
+      "notes": [
+        "Trama distintiva",
+        "Elasticidad media",
+        "Recomendada para calce suelto"
+      ]
+    },
+    {
+      "id": "nba",
+      "name": "NBA",
+      "category": "Microperforada",
+      "published": true,
+      "prices": {
+        "shirt": 28000,
+        "set": 49500
+      },
+      "cover": "assets/nba/trama.webp",
+      "gallery": [
+        {
+          "id": "trama",
+          "title": "Trama",
+          "src": "assets/nba/trama.webp",
+          "alt": "Trama blanca de NBA: perforaciones ovaladas notorias en filas alternadas."
+        },
+        {
+          "id": "contraluz",
+          "title": "A contraluz",
+          "src": "assets/nba/contraluz.webp",
+          "alt": "Representación de NBA con una planta y una lámpara detrás de la tela.",
+          "backlightBase": "assets/nba/contraluz-tenue.webp"
+        },
+        {
+          "id": "prenda",
+          "title": "Detalle de prenda",
+          "src": "assets/nba/prenda.webp",
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en NBA."
+        }
+      ],
+      "features": [
+        {
+          "id": "transpirabilidad",
+          "title": "Transpirabilidad",
+          "src": "assets/nba/transpirabilidad.webp",
+          "alt": "Macro de NBA con flechas ilustrativas del paso de aire por sus perforaciones.",
+          "description": "Su trama favorece la ventilación."
+        },
+        {
+          "id": "secado",
+          "title": "Secado rápido",
+          "src": "assets/nba/secado.webp",
+          "alt": "Dobladillo de NBA suspendido, como representación del secado al aire.",
+          "description": "Tejido de secado rápido."
+        },
+        {
+          "id": "resistencia",
+          "title": "Resistencia",
+          "src": "assets/nba/resistencia.webp",
+          "alt": "NBA bajo tensión moderada, con dos flechas y sin manos. El tejido conserva su estructura.",
+          "description": "Para uso deportivo intensivo."
+        }
+      ],
+      "notes": [
+        "Especial para básquet",
+        "Elasticidad baja a media",
+        "Puede traslucir"
       ]
     }
   ]

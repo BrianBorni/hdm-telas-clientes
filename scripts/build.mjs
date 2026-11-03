@@ -6,6 +6,19 @@ const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const source = join(projectRoot, 'public');
 const destination = join(projectRoot, 'dist');
 
+async function checkCatalogImage(src) {
+  if (typeof src !== 'string' || !/^assets\/[a-z0-9/_.-]+\.(?:webp|png|jpe?g)$/i.test(src) || src.split('/').includes('..')) {
+    throw new Error(`Ruta de imagen no válida: ${src}`);
+  }
+  const variants = src.endsWith('.webp')
+    ? [src, src.replace(/\.webp$/, '-960.webp'), src.replace(/\.webp$/, '-640.webp')]
+    : [src];
+  for (const variant of variants) {
+    const stats = await lstat(join(source, variant));
+    if (!stats.isFile() || stats.size === 0) throw new Error(`Falta la imagen del catálogo: ${variant}`);
+  }
+}
+
 async function checkSource(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   for (const entry of entries) {
@@ -39,6 +52,12 @@ try {
     }
     if (identifiers.has(fabric.id)) throw new Error(`Identificador de tela repetido: ${fabric.id}`);
     identifiers.add(fabric.id);
+    if (fabric.published === false) continue;
+    if (!Number.isFinite(fabric.prices?.shirt) || !Number.isFinite(fabric.prices?.set)) {
+      throw new Error(`Precios no válidos: ${fabric.id}`);
+    }
+    const images = [fabric.cover, ...[...fabric.gallery, ...fabric.features].flatMap(item => [item.src, ...(item.backlightBase ? [item.backlightBase] : [])])];
+    for (const src of new Set(images)) await checkCatalogImage(src);
   }
   await rm(destination, { recursive: true, force: true });
   await cp(source, destination, { recursive: true });

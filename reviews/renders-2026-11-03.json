@@ -1,0 +1,1492 @@
+{
+  "status": "Primera versión para revisión del usuario. Incorporación de todas las telas autorizada el 3 de noviembre de 2026.",
+  "tool": "image_gen (built-in)",
+  "criteria": [
+    "Fotografías originales como fuente del material; renders anteriores solo para composición.",
+    "Comparación visual de cada salida con sus originales.",
+    "Sin manos, dedos, textos ni logos en los renders.",
+    "Tramas planas alineadas con el horizonte.",
+    "Poliéster aproximado: solo una fotografía de referencia.",
+    "Control de fondo ilustrativo, no una medición física de transparencia."
+  ],
+  "fabrics": [
+    {
+      "fabric": "Poliéster deportivo",
+      "tool": "image_gen built-in",
+      "status": "Primera versión para corrección",
+      "limitations": [
+        "Única fotografía incompleta de material; no foto de transmisión ni escala dimensional. La confección, colores y caída son ilustrativos."
+      ],
+      "assets": [
+        {
+          "name": "trama",
+          "prompt": "Use case: product-mockup. Asset type: HDM fabric customer catalog render. 1536x1024 landscape, single image not collage. Pristine photorealistic 3D white studio, realistic fine synthetic material, no hands, no people, no logos, no labels, no text, no watermark. Original photo is the authoritative material reference only; remove purple pen writing, desk and laptop. Polyester fine continuous single-jersey knit, tiny diagonal interlocked loops and a smooth compact surface, no decorative pattern, no square grid, no technical punched mesh holes. White or neutral silver-white yarn. Material appears lightweight and ordinary economical polyester, not coarse wool or thick cotton. Primary request: perfectly flat front-facing seamless macro textile filling entire frame, all knit courses parallel to horizon, fine visible stitch detail under diffuse side light, no folds, no seams, no objects. Keep very fine knit density similar original, not honeycomb mesh.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/POLIESTER.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/work/poliester-trama.png",
+          "review": "Punto continuo compacto sin perforaciones técnicas. El render amplifica el relieve microtextil y muestra cursos horizontales; el único original tiene diagonales más sutiles. Aproximación aceptable para primera versión, no réplica dimensional.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/trama.webp",
+              "bytes": 419492
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/trama-960.webp",
+              "bytes": 206958
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/trama-640.webp",
+              "bytes": 104580
+            }
+          ]
+        },
+        {
+          "name": "prenda",
+          "prompt": "Use case: product-mockup. Asset type: HDM fabric customer catalog render. 1536x1024 landscape, single image not collage. Pristine photorealistic 3D white studio, realistic fine synthetic material, no hands, no people, no logos, no labels, no text, no watermark. Original photo is the authoritative material reference only; remove purple pen writing, desk and laptop. Polyester fine continuous single-jersey knit, tiny diagonal interlocked loops and a smooth compact surface, no decorative pattern, no square grid, no technical punched mesh holes. White or neutral silver-white yarn. Material appears lightweight and ordinary economical polyester, not coarse wool or thick cotton. Primary request: immaculate close macro of the lower hem of a white polyester sports shirt on white seamless studio. Two fine parallel white stitch rows, thin supple synthetic knit, gently curved hem with subtle folds. Fine diagonal microstitches visible, not ribbing or decorative texture. No branding.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/POLIESTER.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-3091dea8-3618-4386-bfea-bdaef49093b0.png",
+          "review": "Dobladillo doble, superficie continua fina y suave; sin patrón inventado. Costura ilustrativa, original es un retazo sin confeccionar.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/prenda.webp",
+              "bytes": 305284
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/prenda-960.webp",
+              "bytes": 119872
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/prenda-640.webp",
+              "bytes": 43280
+            }
+          ]
+        },
+        {
+          "name": "contraluz",
+          "prompt": "Use case: product-mockup. Asset type: HDM fabric customer catalog render. 1536x1024 landscape, single image not collage. Pristine photorealistic 3D white studio, realistic fine synthetic material, no hands, no people, no logos, no labels, no text, no watermark. Original photo is the authoritative material reference only; remove purple pen writing, desk and laptop. Polyester fine continuous single-jersey knit, tiny diagonal interlocked loops and a smooth compact surface, no decorative pattern, no square grid, no technical punched mesh holes. White or neutral silver-white yarn. Material appears lightweight and ordinary economical polyester, not coarse wool or thick cotton. Primary request: white polyester panel hanging in soft shallow vertical folds in foreground. Behind it small plant in white ceramic pot left and small warm table lamp right on pale console. Only extremely faint blurred green and warm amber silhouettes diffused through compact knit, not clear objects, not perforated. Mostly milky opaque white fabric. Camera straight-on horizontal knit courses. Precise textile foreground; clean minimalist studio. Single landscape1536x1024.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/POLIESTER.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-f9f2ee00-eb11-48c9-8518-cda27e24d035.png",
+          "review": "Paño compacto y lechoso, verde/ámbar muy débiles. Objetos visibles parcialmente fuera de los bordes; transmisión sólo aproximada porque no hay foto de poliéster a contraluz.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/contraluz.webp",
+              "bytes": 313532
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/contraluz-960.webp",
+              "bytes": 77510
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/contraluz-640.webp",
+              "bytes": 12412
+            }
+          ]
+        },
+        {
+          "name": "color",
+          "prompt": "Use case: product-mockup. Asset type: HDM fabric customer catalog render. 1536x1024 landscape, single image not collage. Pristine photorealistic 3D white studio, realistic fine synthetic material, no hands, no people, no logos, no labels, no text, no watermark. Original photo is the authoritative material reference only; remove purple pen writing, desk and laptop. Polyester fine continuous single-jersey knit, tiny diagonal interlocked loops and a smooth compact surface, no decorative pattern, no square grid, no technical punched mesh holes. White or neutral silver-white yarn. Material appears lightweight and ordinary economical polyester, not coarse wool or thick cotton. Primary request: clean macro product render of this same fine polyester sports fabric sublimated with an abstract royal-blue panel, a black band and a narrow warm gold stripe, no symbols or lettering. Gentle shallow fold and very fine continuous knit visible across colored areas. Vivid clear saturated clean color, matte-satin synthetic sheen. White background. Do not add decorative holes or weave grid.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/POLIESTER.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-03768cf1-ecf0-48ea-8771-911d6b7bbaa2.png",
+          "review": "La sublimación conserva microtextura continua; colores nítidos, composición azul/negro/dorado solicitada, sin marcas. Ilustración del color, no ensayo de durabilidad.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/color.webp",
+              "bytes": 457246
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/color-960.webp",
+              "bytes": 200824
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/color-640.webp",
+              "bytes": 82164
+            }
+          ]
+        },
+        {
+          "name": "ligereza",
+          "prompt": "Use case: product-mockup. Asset type: HDM fabric customer catalog render. 1536x1024 landscape, single image not collage. Pristine photorealistic 3D white studio, realistic fine synthetic material, no hands, no people, no logos, no labels, no text, no watermark. Original photo is the authoritative material reference only; remove purple pen writing, desk and laptop. Polyester fine continuous single-jersey knit, tiny diagonal interlocked loops and a smooth compact surface, no decorative pattern, no square grid, no technical punched mesh holes. White or neutral silver-white yarn. Material appears lightweight and ordinary economical polyester, not coarse wool or thick cotton. Primary request: thin white polyester swatch floating in a single delicate broad wave above a white studio floor, gentle airy drape and soft shadow, close enough to see its very fine compact knit. No ribbons, no holes, no arrows, no hands or supports; elegant pristine3D textile photograph. Fine not fluffy or coarse.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/POLIESTER.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-8c3e7fb5-a57c-40e9-8ba6-c9d260f2f014.png",
+          "review": "Paño fino con onda y sombra suave; trama continua. Caída ilustrativa no medición de peso.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/ligereza.webp",
+              "bytes": 218580
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/ligereza-960.webp",
+              "bytes": 78586
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/ligereza-640.webp",
+              "bytes": 21782
+            }
+          ]
+        },
+        {
+          "name": "estabilidad",
+          "prompt": "Use case: product-mockup. Asset type: HDM fabric customer catalog render. 1536x1024 landscape, single image not collage. Pristine photorealistic 3D white studio, realistic fine synthetic material, no hands, no people, no logos, no labels, no text, no watermark. Original photo is the authoritative material reference only; remove purple pen writing, desk and laptop. Polyester fine continuous single-jersey knit, tiny diagonal interlocked loops and a smooth compact surface, no decorative pattern, no square grid, no technical punched mesh holes. White or neutral silver-white yarn. Material appears lightweight and ordinary economical polyester, not coarse wool or thick cotton. Primary request: close-up of a perfectly neat white polyester shirt lower hem resting as a smooth shallow curve on a white studio floor. Fine double white stitch line parallel to horizon, subtly curved edges, regular even fine compact knit without stretching or holes. Communicate regular shape with precise orderly construction, no arrows, no infographic elements, no tools.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/POLIESTER.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-60471d94-33cc-496b-9cb7-24b083eba168.png",
+          "review": "Dobladillo ordenado y superficie compacta continua. No representa ensayo de encogimiento.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/estabilidad.webp",
+              "bytes": 289824
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/estabilidad-960.webp",
+              "bytes": 85490
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/estabilidad-640.webp",
+              "bytes": 11390
+            }
+          ]
+        },
+        {
+          "name": "contraluz-tenue",
+          "prompt": "Use case: lighting-weather. First image is edit target; second is authoritative original material. Produce low-background-intensity frame for crossfade. EXACT registration1536x1024: keep every cloth fold, stitch, silhouette, camera and crop exactly unchanged; keep white foreground cloth illumination and shading unchanged. Change ONLY objects behind the cloth: turn warm lamp OFF, dim illumination of plant and console until colored silhouettes extremely faint. Preserve compact fine continuous polyester knit, no new mesh holes or pattern. No global darkening, no texture changes, no new folds, no writing. Same composition, no added objects.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/generated_images/exec-f9f2ee00-eb11-48c9-8518-cda27e24d035.png",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/POLIESTER.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-73c0500e-41ef-4c96-855c-f38b420633c6.png",
+          "review": "Mismo encuadre y pliegues conservados visualmente; lámpara apagada y objetos atenuados. El fondo libre lateral queda gris. No se altera intencionalmente opacidad del material; simulación ilustrativa.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/contraluz-tenue.webp",
+              "bytes": 171326
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/contraluz-tenue-960.webp",
+              "bytes": 29342
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/poliester/contraluz-tenue-640.webp",
+              "bytes": 6312
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fabric": "poc",
+      "tool": "image_gen",
+      "originalsInspected": [
+        "contact/TELA POC.jpg",
+        "TELA POC/20261102_100109.jpg",
+        "TELA POC/20261102_100144.jpg"
+      ],
+      "limitations": [
+        "La opacidad y elasticidad son representaciones cualitativas, no mediciones. La escala física no está calibrada.",
+        "POC sin trama decorativa; normalización de exposición y color a blanco."
+      ],
+      "assets": [
+        {
+          "id": "trama",
+          "prompt": "Use case: product-mockup. Asset: HDM customer fabric catalog, one individual 1536x1024 landscape image. Reference 1 is an ORIGINAL POC microfibre photograph, authoritative for material: very fine compact jersey knit with close vertical columns of tiny interlocked wavy loops, low relief, soft smooth lightweight synthetic fabric. Normalize the blue photographic cast to neutral white. There is NO square grid, no large perforation pattern, no thick ribs. Reproduce the microknit faithfully, not a generic woven cotton. Pristine photorealistic 3D studio render, white-on-white with soft neutral gray shading, fine texture readable. No hands, fingers, people, text, brand logos, watermark. A completely flat, front-facing orthographic macro material swatch filling the entire frame edge to edge, no seams, no folds. Knit rows horizontal and columns vertical, parallel to the horizon. Detailed but fine yarn, no giant holes.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/TELA POC/20261102_100109.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/poc-trama-recovered.png",
+          "review": "Punto fino compacto sin cuadrícula; conserva columnas de microbucles. El render suaviza irregularidad del original y el hilo tiene contorno algo más redondo, aceptado para primera versión."
+        },
+        {
+          "id": "contraluz",
+          "prompt": "Use case: product-mockup. Asset: HDM customer fabric catalog, one individual 1536x1024 landscape image. Reference 1 is an ORIGINAL POC microfibre photograph, authoritative for material: very fine compact jersey knit with close vertical columns of tiny interlocked wavy loops, low relief, soft smooth lightweight synthetic fabric. Normalize the blue photographic cast to neutral white. There is NO square grid, no large perforation pattern, no thick ribs. Reproduce the microknit faithfully, not a generic woven cotton. Pristine photorealistic 3D studio render, white-on-white with soft neutral gray shading, fine texture readable. No hands, fingers, people, text, brand logos, watermark. Backlit demonstration: white POC panel hangs with subtle vertical folds in front of a small green plant in ceramic pot on left and a softly glowing warm table lamp on right, both entirely BEHIND fabric. Camera straight-on, fabric dominant. Reference2 shows TRUE TRANSMISSION: POC blocks almost all light, with extremely tiny sparse pinpricks between knit loops, not translucent fabric-wide windows. Plant should be almost imperceptible faint shadows, lamp a very restrained diffuse hint with minuscule light pinpricks. White frontal studio illumination keeps cloth texture visible. No square grid, no enlarged eyelets. Bright clean photorealistic render.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/TELA POC/20261102_100109.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/TELA POC/20261102_100144.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-2ef302ae-6da5-481a-802a-ff7203922387.png",
+          "review": "POC muestra fondo extremadamente tenue y pocos micropuntos, coherente con original muy compacto. Alto/bajo conservan registro de pliegues y microcolumnas; efecto deliberadamente sutil."
+        },
+        {
+          "id": "contraluz-tenue",
+          "prompt": "Use case: lighting-weather. Edit target first image: white POC cloth, faint plant left and lamp right behind. Second original reference confirms nearly opaque compact jersey and sparse tiny pinpricks. Produce low-background-intensity frame for crossfade. EXACTLY preserve camera, dimensions1536x1024, crop, EVERY knit stitch, folds, shadows and front white studio light of first image. Change only background illumination: lamp off and objects behind cloth become imperceptible. Do not globally change cloth brightness. Do not move/rebuild cloth or add holes, keep material compact. No text.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/generated_images/exec-2ef302ae-6da5-481a-802a-ff7203922387.png",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/TELA POC/20261102_100144.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-61bd6540-e29e-44be-9732-fe5f611cf513.png",
+          "review": "POC muestra fondo extremadamente tenue y pocos micropuntos, coherente con original muy compacto. Alto/bajo conservan registro de pliegues y microcolumnas; efecto deliberadamente sutil."
+        },
+        {
+          "id": "prenda",
+          "prompt": "Use case: product-mockup. Asset: HDM customer fabric catalog, one individual 1536x1024 landscape image. Reference 1 is an ORIGINAL POC microfibre photograph, authoritative for material: very fine compact jersey knit with close vertical columns of tiny interlocked wavy loops, low relief, soft smooth lightweight synthetic fabric. Normalize the blue photographic cast to neutral white. There is NO square grid, no large perforation pattern, no thick ribs. Reproduce the microknit faithfully, not a generic woven cotton. Pristine photorealistic 3D studio render, white-on-white with soft neutral gray shading, fine texture readable. No hands, fingers, people, text, brand logos, watermark. Macro detail of lower hem of a white POC sports jersey, two parallel neat stitch lines and a softly folded hem at lower third on a white surface. Fine POC jersey knit smooth at garment scale, same construction as original. Reference2 is STYLE/COMPOSITION ONLY; do not copy its square grid.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/TELA POC/20261102_100109.jpg",
+            "/workspace/scratch/35a2c2ee7b18/generated_images/exec-bd266a9b-301d-456f-86cd-4303b45c6ed8.png"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-524e721a-21e4-4e2c-8ca4-43443b150ec9.png",
+          "review": "Punto fino compacto sin cuadrícula; conserva columnas de microbucles. El render suaviza irregularidad del original y el hilo tiene contorno algo más redondo, aceptado para primera versión."
+        },
+        {
+          "id": "suavidad",
+          "prompt": "Use case: product-mockup. Asset: HDM customer fabric catalog, one individual 1536x1024 landscape image. Reference 1 is an ORIGINAL POC microfibre photograph, authoritative for material: very fine compact jersey knit with close vertical columns of tiny interlocked wavy loops, low relief, soft smooth lightweight synthetic fabric. Normalize the blue photographic cast to neutral white. There is NO square grid, no large perforation pattern, no thick ribs. Reproduce the microknit faithfully, not a generic woven cotton. Pristine photorealistic 3D studio render, white-on-white with soft neutral gray shading, fine texture readable. No hands, fingers, people, text, brand logos, watermark. Macro close view of white POC cloth forming two gentle rounded cushion-soft folds across a white surface. Focus on smooth very fine low-relief microknit and soft contact. No arrows or droplets. Material should be soft synthetic sporting jersey, not fluffy fleece or towel.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/TELA POC/20261102_100109.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-13cc1d35-290e-496a-baa4-891690247289.png",
+          "review": "Punto fino compacto sin cuadrícula; conserva columnas de microbucles. El render suaviza irregularidad del original y el hilo tiene contorno algo más redondo, aceptado para primera versión."
+        },
+        {
+          "id": "ligereza",
+          "prompt": "Use case: product-mockup. Asset: HDM customer fabric catalog, one individual 1536x1024 landscape image. Reference 1 is an ORIGINAL POC microfibre photograph, authoritative for material: very fine compact jersey knit with close vertical columns of tiny interlocked wavy loops, low relief, soft smooth lightweight synthetic fabric. Normalize the blue photographic cast to neutral white. There is NO square grid, no large perforation pattern, no thick ribs. Reproduce the microknit faithfully, not a generic woven cotton. Pristine photorealistic 3D studio render, white-on-white with soft neutral gray shading, fine texture readable. No hands, fingers, people, text, brand logos, watermark. A thin white POC jersey panel suspended gently above a white surface, one graceful light floating wave and fine narrow hem at lower edge, soft diffuse shadow below. Showcase lightweight soft synthetic cloth, not stiff sheet or thick fleece. Keep original tiny close-knit vertical loops, no arrows, no body, no hands.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/TELA POC/20261102_100109.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-f39cc40d-51d7-47d7-932f-28d5950d5ea4.png",
+          "review": "Punto fino compacto sin cuadrícula; conserva columnas de microbucles. El render suaviza irregularidad del original y el hilo tiene contorno algo más redondo, aceptado para primera versión."
+        },
+        {
+          "id": "resistencia",
+          "prompt": "Use case: product-mockup. Asset: HDM customer fabric catalog, one individual 1536x1024 landscape image. Reference 1 is an ORIGINAL POC microfibre photograph, authoritative for material: very fine compact jersey knit with close vertical columns of tiny interlocked wavy loops, low relief, soft smooth lightweight synthetic fabric. Normalize the blue photographic cast to neutral white. There is NO square grid, no large perforation pattern, no thick ribs. Reproduce the microknit faithfully, not a generic woven cotton. Pristine photorealistic 3D studio render, white-on-white with soft neutral gray shading, fine texture readable. No hands, fingers, people, text, brand logos, watermark. White POC fabric pulled gently along a diagonal band from lower left to upper right by invisible forces, no grips/hands. Two thin medium-gray arrows at diagonally opposite corners point outward showing modest tension. Original small knit loops remain close and intact, slightly elongated locally; NOT high-stretch Lycra, no gaping holes, no ripped fabric. Broad gentle folds in rest of cloth, pristine white studio render.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/TELA POC/20261102_100109.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-8ba35db4-e693-464d-89d2-55d00f5c5249.png",
+          "review": "Tensión moderada, sin grandes huecos ni exageración Lycra. Conserva punto POC."
+        }
+      ]
+    },
+    {
+      "fabric": "lycra",
+      "tool": "image_gen",
+      "originalsInspected": [
+        "contact/MICTOFIBRA CON LYCRA.jpg",
+        "MICTOFIBRA CON LYCRA/20261102_094057.jpg",
+        "MICTOFIBRA CON LYCRA/20261102_094122.jpg",
+        "MICTOFIBRA CON LYCRA/20261102_095051.jpg"
+      ],
+      "limitations": [
+        "Opacidad, peso y elasticidad son representaciones cualitativas sin calibración física. No se representa como tela fresca o liviana.",
+        "Secado muestra prenda suspendida como ilustración y no demuestra tiempos."
+      ],
+      "assets": [
+        {
+          "id": "trama",
+          "prompt": "Use case: product-mockup. Individual 1536x1024 flat orthographic macro texture for HDM catalog. Original reference is Microfibre Lycra: compact fine synthetic double-stretch jersey, very low relief close tiny knit loops arranged in fine even horizontal rows and vertical stitch columns. Normalize blue camera cast to WHITE, precise material character. Fine and smooth but slightly heavier substantial knit than POC. Absolutely no decorative grid, large perforations, chunky wool, thick ribbing or cotton fuzz. Fill frame edge-to-edge with FLAT SWATCH, no folds, no seams, knit rows horizontal parallel horizon. Pristine photorealistic 3D soft studio lighting, fine neutral shadows, no text/logo/people/hands.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_094057.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_095051.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-a2a96a63-865f-4154-a507-093128293f28.png",
+          "review": "Punto fino compacto de hileras horizontales de bajo relieve, sin trama decorativa. Normalización blanco y luz estudio suaviza irregularidades."
+        },
+        {
+          "id": "contraluz",
+          "prompt": "Use case: product-mockup. One individual landscape1536x1024 render for HDM customer fabric catalog. References1/2 are ORIGINAL Microfibre Lycra: smooth compact synthetic knit, fine close horizontal rows of tiny linked loops, very low relief, no decorative grid or large perforations. Normalize blue photographed cast to pure neutral WHITE; reproduce construction not photograph's color or markings. This is substantial slightly heavier athletic stretch cloth with weighted soft drape, not thin airy chiffon, not cotton, wool or ribbed sweater. Photorealistic pristine3D white studio render soft neutralgray shading. No hands, fingers, bodies, text, logos, watermark. White Lycra fabric panel hanging in subtle broad vertical folds, straight-on, in front of a small green plant in ceramic pot on left and softly glowing warm table lamp on right, both entirely behind fabric. Reference2 is ORIGINAL green-screen transmission: dense fabric is nearly opaque with very few tiny pinpricks. Objects should be almost hidden with only very faint vague shadows and a restrained diffuse warm hint from lamp, no clear silhouettes or window-mesh. Keep white front studio light strong so fine compact textile clearly visible. No invented perforation pattern.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_094057.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_094122.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-f1f6bac8-4cb1-4f48-a467-c0be2b865c81.png",
+          "review": "Tejido compacto casi opaco como original094122, fondo muy tenue sin perforaciones inventadas. Registro alto/bajo conservado, efecto iluminación sutil."
+        },
+        {
+          "id": "contraluz-tenue",
+          "prompt": "Use case: lighting-weather. Edit first image which is white dense Microfibre Lycra cloth in front of a very faint plant left and lamp right. Second image ORIGINAL green-screen transmission confirms nearly opaque compact knit. Produce exact registered low-background-light frame for slider crossfade. Preserve dimensions1536x1024, camera/crop and EVERY cloth fold/stitch position, exact white front surface illumination and shadows. Only change objects BEHIND: lamp off, plant and objects lose illumination becoming imperceptible. Do not darken foreground, do not regenerate cloth, no added holes or grid, no repositioning. Output same clean white photorealistic3D frame, no text.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/generated_images/exec-f1f6bac8-4cb1-4f48-a467-c0be2b865c81.png",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_094122.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-fc93ba55-1de1-4c5b-bb66-1ed273e4dccb.png",
+          "review": "Tejido compacto casi opaco como original094122, fondo muy tenue sin perforaciones inventadas. Registro alto/bajo conservado, efecto iluminación sutil."
+        },
+        {
+          "id": "prenda",
+          "prompt": "Use case: product-mockup. One individual landscape1536x1024 render for HDM customer fabric catalog. References1/2 are ORIGINAL Microfibre Lycra: smooth compact synthetic knit, fine close horizontal rows of tiny linked loops, very low relief, no decorative grid or large perforations. Normalize blue photographed cast to pure neutral WHITE; reproduce construction not photograph's color or markings. This is substantial slightly heavier athletic stretch cloth with weighted soft drape, not thin airy chiffon, not cotton, wool or ribbed sweater. Photorealistic pristine3D white studio render soft neutralgray shading. No hands, fingers, bodies, text, logos, watermark. Macro detail of lower hem of white athletic jersey in this material. Neat double stitch lines along softly folded lower edge on white surface, slightly substantial cloth thickness and weighted smooth folds. Reference2 supplies original garment texture. Keep fine horizontal knit rows at garment scale.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_094057.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_095051.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-694a9d64-d252-46b3-96ff-01a16a5122f3.png",
+          "review": "Punto fino compacto de hileras horizontales de bajo relieve, sin trama decorativa. Normalización blanco y luz estudio suaviza irregularidades."
+        },
+        {
+          "id": "elasticidad",
+          "prompt": "Use case: product-mockup. One individual landscape1536x1024 render for HDM customer fabric catalog. References1/2 are ORIGINAL Microfibre Lycra: smooth compact synthetic knit, fine close horizontal rows of tiny linked loops, very low relief, no decorative grid or large perforations. Normalize blue photographed cast to pure neutral WHITE; reproduce construction not photograph's color or markings. This is substantial slightly heavier athletic stretch cloth with weighted soft drape, not thin airy chiffon, not cotton, wool or ribbed sweater. Photorealistic pristine3D white studio render soft neutralgray shading. No hands, fingers, bodies, text, logos, watermark. A square white Microfibre Lycra swatch floats in a clean studio. Invisible forces stretch it in BOTH height and width at once. Four thin medium-gray arrows near four sides point outward (up/down/left/right), minimal and no labels. Cloth shows smooth outward tension with fine original stitch loops slightly elongated in both axes, dense continuous textile without gaps or tearing. Remaining edges have subtle curved tension and folds. NOT a square-grid mesh; material is smooth compact original knit.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_094057.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_095051.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-f300b7ad-7284-4e34-8591-b53b6f342153.png",
+          "review": "Cuatro flechas indican dos ejes, tejido continuo sin huecos ni desgarro. Forma representativa, amplitud no medida."
+        },
+        {
+          "id": "caida",
+          "prompt": "Use case: product-mockup. One individual landscape1536x1024 render for HDM customer fabric catalog. References1/2 are ORIGINAL Microfibre Lycra: smooth compact synthetic knit, fine close horizontal rows of tiny linked loops, very low relief, no decorative grid or large perforations. Normalize blue photographed cast to pure neutral WHITE; reproduce construction not photograph's color or markings. This is substantial slightly heavier athletic stretch cloth with weighted soft drape, not thin airy chiffon, not cotton, wool or ribbed sweater. Photorealistic pristine3D white studio render soft neutralgray shading. No hands, fingers, bodies, text, logos, watermark. Close view of WHITE Microfibre Lycra draped heavily from an invisible horizontal support at top of image, forming three broad rounded weighted vertical folds and a smooth substantial lower hem. A low white surface beneath receives a soft shadow. Show its greater weight and fluid weighted fall; no wind, no floating thin chiffon effect. Fine compact horizontal knit rows follow folds as original fabric. No arrows.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_094057.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_095051.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-47092514-eca8-48c7-9465-ccdfb9734687.png",
+          "review": "Pliegues ponderados y tela más sustanciosa, sin efecto flotante. Hileras finas horizontales conservadas."
+        },
+        {
+          "id": "secado",
+          "prompt": "Use case: product-mockup. One individual landscape1536x1024 render for HDM customer fabric catalog. References1/2 are ORIGINAL Microfibre Lycra: smooth compact synthetic knit, fine close horizontal rows of tiny linked loops, very low relief, no decorative grid or large perforations. Normalize blue photographed cast to pure neutral WHITE; reproduce construction not photograph's color or markings. This is substantial slightly heavier athletic stretch cloth with weighted soft drape, not thin airy chiffon, not cotton, wool or ribbed sweater. Photorealistic pristine3D white studio render soft neutralgray shading. No hands, fingers, bodies, text, logos, watermark. Macro detail of lower hem of a white Lycra athletic jersey hanging freely against a neutral white-to-lightgray background with soft studio illumination. One broad gentle wave across hem, weighted smooth fall and neat double stitch line, subtle shadow. Image symbolizes air drying but DO NOT add droplets, wet patch, glow, vapor or performance claims. Fine original compact horizontal-row knit, not mesh. No arrows.",
+          "references": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_094057.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICTOFIBRA CON LYCRA/20261102_095051.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-ad88c408-abdc-44b9-8ff8-d1e37733d236.png",
+          "review": "Punto fino compacto de hileras horizontales de bajo relieve, sin trama decorativa. Normalización blanco y luz estudio suaviza irregularidades."
+        }
+      ]
+    },
+    {
+      "status": "complete",
+      "fabric": "AFA / FIFA",
+      "tool": "image_gen built-in",
+      "originals": [
+        "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICROPERFORADA AFA - FIFA/20261102_094448.jpg",
+        "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/MICROPERFORADA AFA - FIFA/20261102_110851.jpg"
+      ],
+      "overview": "work/contact/MICROPERFORADA AFA - FIFA.jpg (all nine original photographs reviewed in contact sheet)",
+      "material": "The original photos are authoritative material evidence: white thin technical knit, densely knitted fine horizontal stitch courses between evenly spaced HORIZONTAL rows of small vertically oriented paired/triple puncture-like pores. Some pores have two tiny vertical slits separated by a thread. Rows only slightly staggered; no Square lattice, no broad transparent cells, no Nike stepped blocks. Porous spots transmit light; remaining knit is milky and much more opaque. Reproduce the exact knit and pore proportions; do not enlarge holes into basketball mesh. Ignore black marker handwriting, cool color cast, green screen color, and photo background. Fabric is neutral white.",
+      "assets": [
+        {
+          "name": "trama",
+          "prompt": "Use case: product-mockup. Asset: HDM fabric catalogue, individual flat macro texture. References 1 and 2 are ORIGINAL material photos. The original photos are authoritative material evidence: white thin technical knit, densely knitted fine horizontal stitch courses between evenly spaced HORIZONTAL rows of small vertically oriented paired/triple puncture-like pores. Some pores have two tiny vertical slits separated by a thread. Rows only slightly staggered; no Square lattice, no broad transparent cells, no Nike stepped blocks. Porous spots transmit light; remaining knit is milky and much more opaque. Reproduce the exact knit and pore proportions; do not enlarge holes into basketball mesh. Ignore black marker handwriting, cool color cast, green screen color, and photo background. Fabric is neutral white. Create photorealistic pristine 3D studio render of a flat taut continuous piece of this fabric filling the entire 1536x1024 landscape frame. Front-on orthographic view, no folds, no shadows from objects. Horizontal pore rows precisely parallel to horizon, vertical fibers upright. Show about 18 horizontal pore rows across the height, tiny fine synthetic thread detail in focus throughout. Soft neutral white illumination, restrained low relief, subtle gray shadows within pores. No labels, text, logo, hands, props or watermark.",
+          "output": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-c2664c9f-1b69-45fe-902e-5529c8d7691c.png",
+          "comparison": "Revisada frente a094448 y110851: poros pequeños dobles en filas horizontales, tejido compacto; sin retícula Square. La regularidad y las columnas de punto resultan más ideales que la foto y no hay escala física validada.",
+          "variants": [
+            {
+              "path": "public/assets/fifa/trama.webp",
+              "bytes": 411364,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/fifa/trama-960.webp",
+              "bytes": 213146,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/fifa/trama-640.webp",
+              "bytes": 106904,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prenda",
+          "prompt": "Use case: product-mockup. Asset: HDM individual garment hem macro. References 1 and 2 are ORIGINAL material authority; reference 3 is COMPOSITION and lighting ONLY, never copy its Square fabric. The original photos are authoritative material evidence: white thin technical knit, densely knitted fine horizontal stitch courses between evenly spaced HORIZONTAL rows of small vertically oriented paired/triple puncture-like pores. Some pores have two tiny vertical slits separated by a thread. Rows only slightly staggered; no Square lattice, no broad transparent cells, no Nike stepped blocks. Porous spots transmit light; remaining knit is milky and much more opaque. Reproduce the exact knit and pore proportions; do not enlarge holes into basketball mesh. Ignore black marker handwriting, cool color cast, green screen color, and photo background. Fabric is neutral white. Create 1536x1024 landscape pristine photorealistic 3D render of the bottom corner of a plain white sports jersey, clean curved hem with two neat parallel stitch lines. Same close framing, elegant gentle folds and white studio background as reference3. Replace Square lattice completely with the fine AFA/FIFA porous knit from originals. True small pore rows follow the cloth and seam naturally, subtle at garment scale, visible on near area. Seam fully opaque folded fabric. No hands, no logo, no text, no watermark.",
+          "output": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-49a8f555-c5a2-4686-8ea8-fbe2ef00047f.png",
+          "comparison": "Revisada: conserva hileras finas de poros dobles y fondo compacto. Doble costura y dobladillo son ilustrativos, no una prenda original fotografiada.",
+          "variants": [
+            {
+              "path": "public/assets/fifa/prenda.webp",
+              "bytes": 215560,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/fifa/prenda-960.webp",
+              "bytes": 84958,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/fifa/prenda-640.webp",
+              "bytes": 32724,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "contraluz",
+          "prompt": "Use case: product-mockup. Asset: fabric catalogue translucency illustration. Input photos are ORIGINAL material evidence. The original photos are authoritative material evidence: white thin technical knit, densely knitted fine horizontal stitch courses between evenly spaced HORIZONTAL rows of small vertically oriented paired/triple puncture-like pores. Some pores have two tiny vertical slits separated by a thread. Rows only slightly staggered; no Square lattice, no broad transparent cells, no Nike stepped blocks. Porous spots transmit light; remaining knit is milky and much more opaque. Reproduce the exact knit and pore proportions; do not enlarge holes into basketball mesh. Ignore black marker handwriting, cool color cast, green screen color, and photo background. Fabric is neutral white. Render the white AFA/FIFA cloth as a thin sheet hanging front-on in very gentle broad folds, almost filling a 1536x1024 frame. Keep rows of tiny porous spots horizontal in flat areas. Behind the cloth stand a small ceramic pot with green leafy plant on left and a warm glowing table lamp on right, on white tabletop. Crucial: green plant and amber lamp transmit through SMALL paired/triple pores in discrete horizontal rows; the broad dense knit between pore rows stays white milky and hides the background almost completely. Only an extremely faint diffuse silhouette through dense fabric, never solid visible green leaf patches. Pores should be fine and numerous, consistent with original photo. Pristine high-end photorealistic3D studio white render, neutral softly lit front fabric, subtle warmth limited behind cloth. No Square grid, no opaque border grid with transparent cells. No hands, text, logo, watermark.",
+          "output": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-fb122345-d287-4430-841a-642c9139191b.png",
+          "comparison": "Revisada frente a110851: color/luz se concentra en los pequeños poros horizontales; resto blanco lechoso. Planta/lámpara muy tenues, fiel a opacidad alta del cuerpo; intensidad es ilustrativa.",
+          "variants": [
+            {
+              "path": "public/assets/fifa/contraluz.webp",
+              "bytes": 331474,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/fifa/contraluz-960.webp",
+              "bytes": 86864,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/fifa/contraluz-640.webp",
+              "bytes": 26894,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "transpirabilidad",
+          "prompt": "Use case: product-mockup. Asset: illustrative breathability macro. Original photos are authoritative. The original photos are authoritative material evidence: white thin technical knit, densely knitted fine horizontal stitch courses between evenly spaced HORIZONTAL rows of small vertically oriented paired/triple puncture-like pores. Some pores have two tiny vertical slits separated by a thread. Rows only slightly staggered; no Square lattice, no broad transparent cells, no Nike stepped blocks. Porous spots transmit light; remaining knit is milky and much more opaque. Reproduce the exact knit and pore proportions; do not enlarge holes into basketball mesh. Ignore black marker handwriting, cool color cast, green screen color, and photo background. Fabric is neutral white. Create 1536x1024 photorealistic3D clean white macro of this specific fabric on a gently raised fold. Close enough to see tiny paired puncture pores in horizontal rows and dense smooth fine knit between rows. Show THREE thin softly translucent white curved arrows flowing out through the pore area toward upper right, diagram overlays only, no labels. Fabric texture unobstructed on left half. Soft graywhite background and depth of field, pristine luxurious clean studio appearance. No squaregrid, no giant mesh holes, no hands, no logos, no text or watermark.",
+          "output": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-a2171346-9244-4767-b5e9-e0386c7975dd.png",
+          "comparison": "Revisada frente a094448: poros dobles pequeños horizontales y fondo denso, tres flechas; textura suave. Escala microscópica y flechas ilustrativas.",
+          "variants": [
+            {
+              "path": "public/assets/fifa/transpirabilidad.webp",
+              "bytes": 203568,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/fifa/transpirabilidad-960.webp",
+              "bytes": 106512,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/fifa/transpirabilidad-640.webp",
+              "bytes": 55292,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "contraluz-tenue",
+          "prompt": "Use case: lighting-weather. EDIT first image, keep it precisely registered for a background-intensity slider. Other two photos are original AFA/FIFA material authority. Create low-background-light version. Keep every stitch and pore position, every fold, cloth silhouette, crop and camera EXACTLY unchanged at1536x1024. Keep foreground WHITE studio illumination, brightness, surface shading unchanged. Turn the lamp BEHIND the fabric off; reduce illumination of plant and background so green and amber tiny puncture glints become barely perceptible. Dense knit remains milky white. Change ONLY transmitted background light. No texture, weave, pore, geometry, scale, framing, focus or foreground lighting change. No text.",
+          "output": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-99a2a717-dc44-450f-85b1-eb56f0e0414c.png",
+          "comparison": "Revisada contra contraluz alto: misma cuadrícula/fold geometry visualmente alineada, se atenúa fondo sin oscurecer paño. No es simulación física cuantitativa.",
+          "variants": [
+            {
+              "path": "public/assets/fifa/contraluz-tenue.webp",
+              "bytes": 254280,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/fifa/contraluz-tenue-960.webp",
+              "bytes": 63090,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/fifa/contraluz-tenue-640.webp",
+              "bytes": 25380,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "secado",
+          "prompt": "Use case: product-mockup. Asset: HDM fabric catalogue quick drying illustration. Input photos are ORIGINAL material authority. The original photos are authoritative material evidence: white thin technical knit, densely knitted fine horizontal stitch courses between evenly spaced HORIZONTAL rows of small vertically oriented paired/triple puncture-like pores. Some pores have two tiny vertical slits separated by a thread. Rows only slightly staggered; no Square lattice, no broad transparent cells, no Nike stepped blocks. Porous spots transmit light; remaining knit is milky and much more opaque. Reproduce the exact knit and pore proportions; do not enlarge holes into basketball mesh. Ignore black marker handwriting, cool color cast, green screen color, and photo background. Fabric is neutral white. Individual1536x1024 photorealistic3D studio render, pure white clean background with soft gray gradient. Lower half of a plain WHITE sports jersey floating gently in air, neatly double-stitched bottom hem curved diagonally a little; thin fluid folds suggest soft air, no fan or hands. Focus on a broad near area of AFA/FIFA fine knit with horizontal tiny paired/triple pores, decreasing toward the distance; realistic soft drape, small neutral shadows. No Square grid, no giant mesh, no heavy sweater, no droplets, no invented performance graph, no text or arrows or logo.",
+          "output": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-20305c82-d823-4a51-a7ca-2673e2e37f27.png",
+          "comparison": "Revisada: poros dobles en filas, tejido compacto, caída suave. Imagen representa secado al aire, no ensayo/medición de tiempo.",
+          "variants": [
+            {
+              "path": "public/assets/fifa/secado.webp",
+              "bytes": 193982,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/fifa/secado-960.webp",
+              "bytes": 67450,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/fifa/secado-640.webp",
+              "bytes": 24280,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "resistencia",
+          "prompt": "Use case: product-mockup. Asset: HDM fabric resistance, not extreme elasticity. Photos1and2 are ORIGINAL AFA/FIFA material evidence. Image3 is composition and clean style reference ONLY; do NOT copy Square grid or extreme stretch. The original photos are authoritative material evidence: white thin technical knit, densely knitted fine horizontal stitch courses between evenly spaced HORIZONTAL rows of small vertically oriented paired/triple puncture-like pores. Some pores have two tiny vertical slits separated by a thread. Rows only slightly staggered; no Square lattice, no broad transparent cells, no Nike stepped blocks. Porous spots transmit light; remaining knit is milky and much more opaque. Reproduce the exact knit and pore proportions; do not enlarge holes into basketball mesh. Ignore black marker handwriting, cool color cast, green screen color, and photo background. Fabric is neutral white. Create individual1536x1024 pristine photorealistic3D white fabric studio render. A panel of this fabric gently tensioned diagonally from lower left to upper right, softly gathered near the ends, moderate visible deformation in center preserving full horizontal rows of small paired pores and dense knit, NOT a long string bundle. Two slim soft gray arrows at opposite ends indicate outward tension. Show a modest pull, not Lycra elasticity. Rounded smooth folds, airy white background, no fixtures, hands or fingers, no logos, no text or watermark.",
+          "output": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-c303fd6a-5799-413c-af82-7a026056aab4.png",
+          "comparison": "Revisada: tensión moderada, poros y fondo compacto permanecen, dos flechas sin manos. Foto estática no valida elongación; imagen ilustrativa, no prueba de resistencia.",
+          "variants": [
+            {
+              "path": "public/assets/fifa/resistencia.webp",
+              "bytes": 372968,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/fifa/resistencia-960.webp",
+              "bytes": 130068,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/fifa/resistencia-640.webp",
+              "bytes": 44206,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fabric": "Dryfit",
+      "tool": "image_gen built-in",
+      "status": "Primera versión para corrección",
+      "limitations": [
+        "Sin escala dimensional ni ensayo de transmisión o elasticidad; el tamaño fino de poros y la caída son interpretaciones visuales basadas en fotos originales."
+      ],
+      "assets": [
+        {
+          "name": "trama",
+          "prompt": "Use case: product-mockup. Asset type: HDM Dryfit fabric catalog single individual render. Landscape1536x1024. Photorealistic pristine3D white studio. Material authoritative reference ORIGINAL PHOTOS: ignore marker writing, surroundings and green tint from monitor. Fabric is white very fine smooth synthetic compact knit in horizontal courses, with SMALL ISOLATED GROUPS of 2–3 adjacent short vertical teardrop/slit micro-apertures at evenly spaced points in horizontal rows. Many compact stitches between pore groups, more than 7 group widths between groups. Slight alternating row offsets as original. Most fabric surface almost opaque and dense; transmission mainly through small grouped slits, NOT one large round punched hole, NOT square grid, no large basketball mesh. Tiny pores about original relative scale. No people/hands, text/logos/labels/watermarks. Primary request: flat orthogonal front-on macro of the dryfit textile filling entire frame. All horizontal courses and rows of groups exactly level to horizon. A regular small triplet of vertical slit openings, separated by thin white bridges; point groups surrounded by dense fine microknit. Soft diffuse side light, sharp textile detail, low relief, no folds or seams. Keep holes small and spaced as photo.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094157.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094236.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-c5cc308f-e19c-4410-9bd6-6438284cb93d.png",
+          "review": "Conserva grupos aislados de 2–3 ranuras verticales sobre fondo compacto, filas horizontales paralelas al horizonte. El relieve del microknit queda algo más regular y marcado que la fotografía; no hay grandes agujeros ni trama Square.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/trama.webp",
+              "bytes": 508784
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/trama-960.webp",
+              "bytes": 231404
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/trama-640.webp",
+              "bytes": 111302
+            }
+          ]
+        },
+        {
+          "name": "contraluz",
+          "prompt": "Use case: product-mockup. Asset type: HDM Dryfit fabric catalog single individual render. Landscape1536x1024. Photorealistic pristine3D white studio. Material authoritative reference ORIGINAL PHOTOS: ignore marker writing, surroundings and green tint from monitor. Fabric is white very fine smooth synthetic compact knit in horizontal courses, with SMALL ISOLATED GROUPS of 2–3 adjacent short vertical teardrop/slit micro-apertures at evenly spaced points in horizontal rows. Many compact stitches between pore groups, more than 7 group widths between groups. Slight alternating row offsets as original. Most fabric surface almost opaque and dense; transmission mainly through small grouped slits, NOT one large round punched hole, NOT square grid, no large basketball mesh. Tiny pores about original relative scale. No people/hands, text/logos/labels/watermarks. Primary request: white textile panel covers ENTIRE frame hanging in gentle shallow vertical folds, all the small plant left and warm table lamp right are COMPLETELY BEHIND the fabric. Pale studio background and pale console. Only tiny green fragments and warm amber pinpoints transmit through isolated grouped slit pores; white dense knit between remains milky opaque. Objects faint and recognizable in broad silhouette via arrays of small pores, not clear through solid cloth. Plant and lamp must not appear uncovered at edges. Macro enough to see the very fine fabric and small grouped perforations. White clean cinematic studio.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094157.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094236.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-d036a258-c641-4f09-8d9c-05c2c478b9fb.png",
+          "review": "Color verde y ámbar transmitido principalmente en los pequeños poros agrupados; cuerpos compactos blancos. Planta y lámpara totalmente detrás; nunca objetos descubiertos. Forma y cantidad de ranuras simplificadas.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/contraluz.webp",
+              "bytes": 381896
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/contraluz-960.webp",
+              "bytes": 120114
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/contraluz-640.webp",
+              "bytes": 27916
+            }
+          ]
+        },
+        {
+          "name": "prenda",
+          "prompt": "Use case: product-mockup. Asset type: HDM Dryfit fabric catalog single individual render. Landscape1536x1024. Photorealistic pristine3D white studio. Material authoritative reference ORIGINAL PHOTOS: ignore marker writing, surroundings and green tint from monitor. Fabric is white very fine smooth synthetic compact knit in horizontal courses, with SMALL ISOLATED GROUPS of 2–3 adjacent short vertical teardrop/slit micro-apertures at evenly spaced points in horizontal rows. Many compact stitches between pore groups, more than 7 group widths between groups. Slight alternating row offsets as original. Most fabric surface almost opaque and dense; transmission mainly through small grouped slits, NOT one large round punched hole, NOT square grid, no large basketball mesh. Tiny pores about original relative scale. No people/hands, text/logos/labels/watermarks. Primary request: close product macro of the lower hem of white Dryfit sports shirt, double fine white stitching and a small gentle curve on white seamless studio. Compact synthetic knit with regular small grouped slit pores visible above and below double seam, horizontal rows. Natural folds, thin low-relief supple surface. No labels, keep small micropores not giant holes.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094157.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094236.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-23da4350-ea0c-46ed-90bc-4953c107cb52.png",
+          "review": "Dobladillo doble limpio; agrupaciones pequeñas mantenidas sobre pliegues. Puntada y escala en prenda ilustrativas pues originales son retazo.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/prenda.webp",
+              "bytes": 388670
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/prenda-960.webp",
+              "bytes": 159744
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/prenda-640.webp",
+              "bytes": 61506
+            }
+          ]
+        },
+        {
+          "name": "transpirabilidad",
+          "prompt": "Use case: product-mockup. Asset type: HDM Dryfit fabric catalog single individual render. Landscape1536x1024. Photorealistic pristine3D white studio. Material authoritative reference ORIGINAL PHOTOS: ignore marker writing, surroundings and green tint from monitor. Fabric is white very fine smooth synthetic compact knit in horizontal courses, with SMALL ISOLATED GROUPS of 2–3 adjacent short vertical teardrop/slit micro-apertures at evenly spaced points in horizontal rows. Many compact stitches between pore groups, more than 7 group widths between groups. Slight alternating row offsets as original. Most fabric surface almost opaque and dense; transmission mainly through small grouped slits, NOT one large round punched hole, NOT square grid, no large basketball mesh. Tiny pores about original relative scale. No people/hands, text/logos/labels/watermarks. Primary request: close macro of the fabric curving in a gentle shallow ridge, SMALL isolated groups of vertical slit pores as reference embedded in compact thin knit. Exactly three delicate white curved arrows flow diagonally upward from a few pore groups, representing ventilation. Keep material dominant and realistic, subtle grey shadows, white background. Do not enlarge apertures into mesh windows. No text.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094157.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094236.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-b48692f3-11b3-4918-a937-b08aef69fd88.png",
+          "review": "Conserva grupos de microperforaciones aisladas en fondo compacto y tres flechas suaves. El punto resulta de hileras horizontales como en la referencia. Flechas ilustrativas.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/transpirabilidad.webp",
+              "bytes": 233968
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/transpirabilidad-960.webp",
+              "bytes": 116410
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/transpirabilidad-640.webp",
+              "bytes": 56468
+            }
+          ]
+        },
+        {
+          "name": "secado",
+          "prompt": "Use case: product-mockup. Asset type: HDM Dryfit fabric catalog single individual render. Landscape1536x1024. Photorealistic pristine3D white studio. Material authoritative reference ORIGINAL PHOTOS: ignore marker writing, surroundings and green tint from monitor. Fabric is white very fine smooth synthetic compact knit in horizontal courses, with SMALL ISOLATED GROUPS of 2–3 adjacent short vertical teardrop/slit micro-apertures at evenly spaced points in horizontal rows. Many compact stitches between pore groups, more than 7 group widths between groups. Slight alternating row offsets as original. Most fabric surface almost opaque and dense; transmission mainly through small grouped slits, NOT one large round punched hole, NOT square grid, no large basketball mesh. Tiny pores about original relative scale. No people/hands, text/logos/labels/watermarks. Primary request: lower hem of a pristine white Dryfit sports shirt suspended in soft air above white seamless studio. Gentle broad curve and fine double white stitching, fine grouped pore construction visible at natural scale; falling lightweight drape. No water drops, no sun icon or labels, no supports/hands, no arrows. Clean illustrative product render for quick-drying fabric.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094157.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094236.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-f2a1596e-0b3f-4200-89f9-a717bef8ab7b.png",
+          "review": "Paño fino colgante con dobladillo y patrón de poros pequeños; caída ilustrativa no prueba de secado.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/secado.webp",
+              "bytes": 165942
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/secado-960.webp",
+              "bytes": 44492
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/secado-640.webp",
+              "bytes": 18218
+            }
+          ]
+        },
+        {
+          "name": "resistencia",
+          "prompt": "Use case: product-mockup. Asset type: HDM Dryfit fabric catalog single individual render. Landscape1536x1024. Photorealistic pristine3D white studio. Material authoritative reference ORIGINAL PHOTOS: ignore marker writing, surroundings and green tint from monitor. Fabric is white very fine smooth synthetic compact knit in horizontal courses, with SMALL ISOLATED GROUPS of 2–3 adjacent short vertical teardrop/slit micro-apertures at evenly spaced points in horizontal rows. Many compact stitches between pore groups, more than 7 group widths between groups. Slight alternating row offsets as original. Most fabric surface almost opaque and dense; transmission mainly through small grouped slits, NOT one large round punched hole, NOT square grid, no large basketball mesh. Tiny pores about original relative scale. No people/hands, text/logos/labels/watermarks. Primary request: white Dryfit fabric sheet under MODERATE diagonal tension from lower left to upper right, held by invisible supports outside image. A shallow taut diagonal band with intact dense knit, grouped small pore pattern remains recognizable and only slightly elongated. Exactly two discreet soft grey outward arrows toward lower-left and upper-right, no hands or fingers, no clamps or holes or damage. Do not show extreme Lycra stretch, no thin spaghetti threads. Pristine render, white background.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094157.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094236.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-aab4d8e3-2332-4600-bda4-e972796b0aef.png",
+          "review": "Dos flechas opuestas, tensión moderada y trama reconocible, no exagera elasticidad tipo Lycra ni destruye conexiones. Deformación ilustrativa, las fotos estáticas no dan magnitud de tensión.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/resistencia.webp",
+              "bytes": 327524
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/resistencia-960.webp",
+              "bytes": 146656
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/resistencia-640.webp",
+              "bytes": 58538
+            }
+          ]
+        },
+        {
+          "name": "contraluz-tenue",
+          "prompt": "Use case: lighting-weather. First image is edit target, remaining images ORIGINAL MATERIAL references only. Low-background-intensity frame for crossfade. EXACTLY preserve first image composition, crop1536x1024, every foreground fold, every tiny grouped slit pore, all cloth shading and WHITE FRONT STUDIO ILLUMINATION. Change ONLY objects BEHIND cloth: turn warm lamp OFF, reduce illumination on plant and background objects to extremely faint nearly imperceptible silhouettes. Keep pore arrays and fine knit unchanged; no uniform darkening, no pattern/scale/pore shift. Dense fabric remains white lechoso, grouped pores may show tiny neutral dim background. No new objects, no text.",
+          "refs": [
+            "/workspace/scratch/35a2c2ee7b18/generated_images/exec-d036a258-c641-4f09-8d9c-05c2c478b9fb.png",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094157.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/DRY FIT/20261102_094236.jpg"
+          ],
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-4f74dfce-b247-489b-a7cd-1553d1d57963.png",
+          "review": "Mis mismos pliegues, poros y encuadre visualmente alineados; baja la lámpara hasta apagada y atenúa objetos detrás preservando iluminación blanca de la tela. Pequeño remanente verde. Simulación ilustrativa, no ensayo físico.",
+          "variants": [
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/contraluz-tenue.webp",
+              "bytes": 248750
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/contraluz-tenue-960.webp",
+              "bytes": 57992
+            },
+            {
+              "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/dryfit/contraluz-tenue-640.webp",
+              "bytes": 16768
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fabric": "Nike",
+      "status": "first_version_ready",
+      "tool": "image_gen built-in",
+      "original_reference_directory": "work/references/NUEVAS REFERENCIAS/NIKE",
+      "reference_photos": [
+        "20261102_094625.jpg",
+        "20261102_094631.jpg",
+        "20261102_094656.jpg",
+        "20261102_094700.jpg",
+        "20261102_094709.jpg"
+      ],
+      "assets": [
+        {
+          "id": "trama",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-40311a3b-ba32-43fc-83cf-2a8eb3787664.png",
+          "prompt": "Use case: precise-object-edit. Edit target image1, a flat orthographic white fabric macro. Image2 ORIGINAL photograph authority for fine smooth synthetic microfilament knit and low relief. Preserve exact image1 stepped/staggered horizontal rectangular pattern layout, orientation parallel horizon, hole distribution, motif scale and frame1536x1024. Correct ONLY material fineness: flatten and greatly reduce the raised horizontal rails, make their threads extremely fine sleek polyester filaments rather than chunky yarn ropes. Interior compact knit is fine smooth technical sports textile, not cotton or wool. Original photo2 shows thin synthetic warp-knit; match that surface. Keep actual tiny holes separated by fine knit, crisp small low relief shadows, no change in block shapes, no folds/seams/arrows/text. Clean bright neutral white.",
+          "rejectedSource": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-64d5ac11-b267-4fbe-96ec-de9d21242c42.png",
+          "comparison": "Cuadrícula no Square: conserva bandas horizontales y bloques escalonados. Edición dirigida reduce relieve. Los poros y los lazos quedan más regulares que en la foto; las bandas todavía se leen algo más acanaladas. Escala física no calibrada.",
+          "variants": [
+            {
+              "path": "public/assets/nike/trama.webp",
+              "bytes": 518946
+            },
+            {
+              "path": "public/assets/nike/trama-960.webp",
+              "bytes": 241172
+            },
+            {
+              "path": "public/assets/nike/trama-640.webp",
+              "bytes": 110232
+            }
+          ]
+        },
+        {
+          "id": "contraluz",
+          "prompt": "Use case: product-mockup. Asset: HDM fabric catalog render, landscape 1536x1024. Photorealistic pristine 3D textile visualization, soft white studio light, white synthetic sports fabric on white/light-gray setting. Absolutely no hands, fingers, people, labels, text, logos, watermark, frayed edges. Original reference photograph is the ONLY authority for textile construction; ignore its blue/green cast, handwritten name, screen pixels, and irregular camera angle. Material: microperforated sports knit with repeating HORIZONTAL stepped/staggered rectangular motifs. Alternating compact fine knit blocks and perforated bands; tiny elongated rounded holes aligned in dense rows, block boundaries step in a brick-like pattern. Thin transverse rails separate horizontal bands. This is NOT square checked mesh, NOT diamond lattice, NOT diagonal chevrons. Match exact reference pattern scale hierarchy, pore distribution, restrained low relief and smooth fine synthetic filaments. Main horizontal band direction parallel to image horizon where fabric is flat; pattern follows folds naturally.\nPrecise composition correction of image1. Use image2 ONLY for composition/framing: wide white fabric panel in gentle folds, green potted plant left-center and warm table lamp right-center entirely BEHIND cloth, visible fragmented through textile pores. Neither object may be uncovered at either edge. Approximately same fabric-scale as image2 with about35-45 horizontal bands visible. REPLACE the Square texture of image2 with Nike stepped-knit from image1 and original photos3&4. Tiny real holes in perforated rectangular bands transmit green/amber; compact stepped knit blocks and thin rails more opaque white. No transparent rectangular windows. Keep original stepped block hierarchy. Broad clean white polished photoreal3D render. 1536x1024. No text/arrows/people.",
+          "rejectedSource": "/workspace/scratch/35a2c2ee7b18/work/nike-contraluz-first.png",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-19ebc2e7-ec33-4713-939c-e7bfea6711a6.png",
+          "comparison": "Se corrigió la primera composición para cubrir planta y lámpara completas con tela. Verde/ámbar aparece fragmentado en bandas perforadas, bloques compactos permanecen mayormente blancos. Nivel de transmisión ilustrativo, no medido. Motivo de mayor relieve que la muestra fina.",
+          "variants": [
+            {
+              "path": "public/assets/nike/contraluz.webp",
+              "bytes": 521950
+            },
+            {
+              "path": "public/assets/nike/contraluz-960.webp",
+              "bytes": 206116
+            },
+            {
+              "path": "public/assets/nike/contraluz-640.webp",
+              "bytes": 78664
+            }
+          ]
+        },
+        {
+          "id": "contraluz-tenue",
+          "prompt": "Use case: lighting-weather. Edit image1 as LOW BACKGROUND INTENSITY partner for an interactive slider. Keep EXACT same camera, crop1536x1024, all fabric folds, each horizontal stepped knit motif and tiny hole, foreground illumination and textile surface shadows; image2 ORIGINAL reference confirms holes transmit, dense knit blocks remain opaque. Change ONLY background behind fabric: turn table lamp OFF and lower plant/background lighting so green and amber glimpses become nearly imperceptible. Foreground fabric remains bright white at same brightness. No movement, no zoom, no pattern shift, no new folds, no whole-image dimming. Two frames will crossfade and must register exactly. No text.",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-5ae3c90d-8826-401b-a1af-11df94ceac3f.png",
+          "comparison": "Comparado con contraluz: mismo encuadre, silueta y pliegues principales; lámpara apagada y planta casi imperceptible. Crossfade ilustrativo; puede haber diferencias subpíxel de microtejido al haber dos renders.",
+          "variants": [
+            {
+              "path": "public/assets/nike/contraluz-tenue.webp",
+              "bytes": 522066
+            },
+            {
+              "path": "public/assets/nike/contraluz-tenue-960.webp",
+              "bytes": 209436
+            },
+            {
+              "path": "public/assets/nike/contraluz-tenue-640.webp",
+              "bytes": 88924
+            }
+          ]
+        },
+        {
+          "id": "prenda",
+          "prompt": "Use case: product-mockup. Asset: HDM fabric catalog render, landscape 1536x1024. Photorealistic pristine 3D textile visualization, soft white studio light, white synthetic sports fabric on white/light-gray setting. Absolutely no hands, fingers, people, labels, text, logos, watermark, frayed edges. Original reference photograph is the ONLY authority for textile construction; ignore its blue/green cast, handwritten name, screen pixels, and irregular camera angle. Material: microperforated sports knit with repeating HORIZONTAL stepped/staggered rectangular motifs. Alternating compact fine knit blocks and perforated bands; tiny elongated rounded holes aligned in dense rows, block boundaries step in a brick-like pattern. Thin transverse rails separate horizontal bands. This is NOT square checked mesh, NOT diamond lattice, NOT diagonal chevrons. Match exact reference pattern scale hierarchy, pore distribution, restrained low relief and smooth fine synthetic filaments. Main horizontal band direction parallel to image horizon where fabric is flat; pattern follows folds naturally.\nESSENTIAL FINENESS: this is smooth ultrafine technical polyester MICROFILAMENT sports fabric with very low relief. No wool, no crochet, no chunky yarn, no raised ropes or thick knit cords. Threads should be finer than in common sweater-knit renderings. Pattern subtle at garment distance; only visible under macro magnification.\nPrimary request: image2 ONLY composition/style of a pristine white t-shirt bottom hem with double stitching and a small vertical side seam at right. Replace Square grid ENTIRELY with Nike fine stepped microperforated pattern from ORIGINAL photo1. White lightweight technical sports knit, low relief, fine synthetic microfilaments. Pattern SMALL AND SUBTLE, about45 bands across visible garment height, no big cables. Camera close garment detail but not extreme thread macro, soft fabric folds, double hem gently curled, seamless pale gray backdrop, pristine3D render. White stitching. No arrows/text.",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-1e84cc0a-e2cb-4528-89f4-7e10aaad24b9.png",
+          "comparison": "Respeta patrón escalonado continuo sobre dobladillo y costura doble. Aspecto sintético más fino y bajo relieve que primera trama. Distribución exacta de poros simplificada.",
+          "variants": [
+            {
+              "path": "public/assets/nike/prenda.webp",
+              "bytes": 280394
+            },
+            {
+              "path": "public/assets/nike/prenda-960.webp",
+              "bytes": 120706
+            },
+            {
+              "path": "public/assets/nike/prenda-640.webp",
+              "bytes": 49084
+            }
+          ]
+        },
+        {
+          "id": "transpirabilidad",
+          "prompt": "Use case: product-mockup. Asset: HDM fabric catalog render, landscape 1536x1024. Photorealistic pristine 3D textile visualization, soft white studio light, white synthetic sports fabric on white/light-gray setting. Absolutely no hands, fingers, people, labels, text, logos, watermark, frayed edges. Original reference photograph is the ONLY authority for textile construction; ignore its blue/green cast, handwritten name, screen pixels, and irregular camera angle. Material: microperforated sports knit with repeating HORIZONTAL stepped/staggered rectangular motifs. Alternating compact fine knit blocks and perforated bands; tiny elongated rounded holes aligned in dense rows, block boundaries step in a brick-like pattern. Thin transverse rails separate horizontal bands. This is NOT square checked mesh, NOT diamond lattice, NOT diagonal chevrons. Match exact reference pattern scale hierarchy, pore distribution, restrained low relief and smooth fine synthetic filaments. Main horizontal band direction parallel to image horizon where fabric is flat; pattern follows folds naturally.\nESSENTIAL FINENESS: this is smooth ultrafine technical polyester MICROFILAMENT sports fabric with very low relief. No wool, no crochet, no chunky yarn, no raised ropes or thick knit cords. Threads should be finer than in common sweater-knit renderings. Pattern subtle at garment distance; only visible under macro magnification.\nPrimary request: elegant close-up of smooth lightweight Nike sports fabric in one low diagonal fold, material band direction remains horizontal outside natural fold, subtle perforated stepped motifs. Three fine white curved arrows rise from real perforated bands and travel rightward/upward to illustrate air circulation. The arrows are graphic overlays only, no labels. Smooth synthetic microfilament, extremely fine low-relief threads; no thick yarn. Macro crop but show at least15 stepped bands across height. Pure white pale gray atmosphere, gentle studio shadows. 1536x1024.",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-a088bff1-88cd-433a-b540-49e308c5d618.png",
+          "comparison": "Conserva bandas y bloques escalonados con perforaciones en bandas abiertas; tres flechas presentes. Macro aumenta visualmente relieve de las hileras frente al original.",
+          "variants": [
+            {
+              "path": "public/assets/nike/transpirabilidad.webp",
+              "bytes": 426994
+            },
+            {
+              "path": "public/assets/nike/transpirabilidad-960.webp",
+              "bytes": 203976
+            },
+            {
+              "path": "public/assets/nike/transpirabilidad-640.webp",
+              "bytes": 89558
+            }
+          ]
+        },
+        {
+          "id": "secado",
+          "prompt": "Use case: product-mockup. Asset: HDM fabric catalog render, landscape 1536x1024. Photorealistic pristine 3D textile visualization, soft white studio light, white synthetic sports fabric on white/light-gray setting. Absolutely no hands, fingers, people, labels, text, logos, watermark, frayed edges. Original reference photograph is the ONLY authority for textile construction; ignore its blue/green cast, handwritten name, screen pixels, and irregular camera angle. Material: microperforated sports knit with repeating HORIZONTAL stepped/staggered rectangular motifs. Alternating compact fine knit blocks and perforated bands; tiny elongated rounded holes aligned in dense rows, block boundaries step in a brick-like pattern. Thin transverse rails separate horizontal bands. This is NOT square checked mesh, NOT diamond lattice, NOT diagonal chevrons. Match exact reference pattern scale hierarchy, pore distribution, restrained low relief and smooth fine synthetic filaments. Main horizontal band direction parallel to image horizon where fabric is flat; pattern follows folds naturally.\nESSENTIAL FINENESS: this is smooth ultrafine technical polyester MICROFILAMENT sports fabric with very low relief. No wool, no crochet, no chunky yarn, no raised ropes or thick knit cords. Threads should be finer than in common sweater-knit renderings. Pattern subtle at garment distance; only visible under macro magnification.\nPrimary request: lower part of a white lightweight technical sports t-shirt suspended in air, bottom hem with double stitching flowing in a single soft wave from left to right; white/light-gray seamless background. Material dry and gently draped, not wet. Perforated stepped bands small and subtle with at least35 repetitions visible across garment height. Smooth fine synthetic yarn, very low relief. No arrows, no props, no clothing label. Pristine realistic3D. 1536x1024.",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-c08c75fb-1611-4279-bc04-cf1089bc2927.png",
+          "comparison": "Caída suave y hem suspendido, motivo escalonado pequeño sobre tejido compacto/perforado. Es representación de caída/secado al aire, no prueba de velocidad de secado.",
+          "variants": [
+            {
+              "path": "public/assets/nike/secado.webp",
+              "bytes": 332436
+            },
+            {
+              "path": "public/assets/nike/secado-960.webp",
+              "bytes": 116196
+            },
+            {
+              "path": "public/assets/nike/secado-640.webp",
+              "bytes": 43778
+            }
+          ]
+        },
+        {
+          "id": "resistencia",
+          "prompt": "Use case: product-mockup. Asset: HDM fabric catalog render, landscape 1536x1024. Photorealistic pristine 3D textile visualization, soft white studio light, white synthetic sports fabric on white/light-gray setting. Absolutely no hands, fingers, people, labels, text, logos, watermark, frayed edges. Original reference photograph is the ONLY authority for textile construction; ignore its blue/green cast, handwritten name, screen pixels, and irregular camera angle. Material: microperforated sports knit with repeating HORIZONTAL stepped/staggered rectangular motifs. Alternating compact fine knit blocks and perforated bands; tiny elongated rounded holes aligned in dense rows, block boundaries step in a brick-like pattern. Thin transverse rails separate horizontal bands. This is NOT square checked mesh, NOT diamond lattice, NOT diagonal chevrons. Match exact reference pattern scale hierarchy, pore distribution, restrained low relief and smooth fine synthetic filaments. Main horizontal band direction parallel to image horizon where fabric is flat; pattern follows folds naturally.\nESSENTIAL FINENESS: this is smooth ultrafine technical polyester MICROFILAMENT sports fabric with very low relief. No wool, no crochet, no chunky yarn, no raised ropes or thick knit cords. Threads should be finer than in common sweater-knit renderings. Pattern subtle at garment distance; only visible under macro magnification.\nPrimary request: white fabric shown under a MODERATE diagonal pull from lower-left to upper-right with invisible grips outside frame. Two slender neutral gray arrows near lower-left and upper-right edges point outward in opposite diagonal directions. No hands or clips. A broad smooth taut zone crosses center, surrounding gentle folds. The stepped Nike knit remains recognizable, pores become only SLIGHTLY elongated; retain all cross connections. This is limited elasticity polyester, NOT highly stretchy Lycra, no extreme elongation, no large diamond net or stringy strands. Fine low-relief synthetic microfilament. 1536x1024.",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-b159e507-65c3-47a3-a848-386beb503761.png",
+          "comparison": "Dos flechas y tirón moderado sin manos; el escalonado y las conexiones siguen visibles, sin convertir en malla de rombos. Originales estáticos no permiten medir elongación exacta.",
+          "variants": [
+            {
+              "path": "public/assets/nike/resistencia.webp",
+              "bytes": 406668
+            },
+            {
+              "path": "public/assets/nike/resistencia-960.webp",
+              "bytes": 199398
+            },
+            {
+              "path": "public/assets/nike/resistencia-640.webp",
+              "bytes": 90598
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Primera versión para correcciones tela por tela.",
+        "Fotografías sin escala dimensional; no se afirma escala física exacta.",
+        "Las tramas se interpretan en blanco neutro, sin color de la pantalla verde.",
+        "En algunas macros, bandas horizontales aún con más relieve que la muestra original fina."
+      ]
+    },
+    {
+      "fabric": "adidas",
+      "tool": "image_gen built-in",
+      "originals": [
+        "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+        "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+      ],
+      "originalConstruction": "Bloques de punto fino horizontal alternados; grupos de nervaduras/poros verticales estrechos; fondo verde ajeno al color de la tela.",
+      "assets": [
+        {
+          "name": "trama",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-51de99ca-f8cb-401b-87f8-8ecf1cd3a926.png",
+          "prompt": "Use case: product-mockup. Asset for HDM fabric customer catalog. Input 1 and 2 are ORIGINAL PHOTOS and sole authority for textile construction. The original ADIDAS-reference material is a fine white synthetic sports jacquard knit. Reproduce its small repeating compact rectangular panels with tiny horizontal stitch rows, narrow double vertical rib groups punctuated by several slim elongated pores; the groups alternate between rows making an offset brick-like tessellation. Pores stay small, not large square windows. Cloth is fine and softly textured, not thick rope crochet, not Square grid, not diagonal Nike stair steps. Ignore handwriting, cut edges, green monitor tint and low exposure in reference photos; finished textile is clean neutral white. Light can pass mainly through the tiny open stitches and slits while compact panels remain milky and opaque. Pristine photorealistic 3D studio render with microfine yarn realism, white minimalist surroundings, no hands/fingers, no text/logos/watermarks. Landscape1536x1024, one single image, no montage. Crucial scale and finish: this is thin smooth polyester SPORTS JERSEY, not wool or cotton sweater knit. Yarn is extremely fine smooth microfilament, no fuzz, very low relief. Dense panel stitch rows read mainly as microfine horizontal lines. Panel aspect is roughly square/slightly wider than tall, not elongated vertical rectangles. Rows alternate by half a panel width. Correct the THIRD image: keep the overall repeating motif BUT remove the chunky sweater-like yarn. FIRST and SECOND images are authoritative original photographs. Reconstruct fine smooth sports textile at low relief, compact horizontal micro-stitch rows and short narrow double vertical slit/rib groups alternating across rows. Squarer flatter panels, not long hanging cables. Front-on entirely flat texture aligned exactly to horizon. About 16 repeats across. No folds no arrows no objects. Neutral white.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Comparada con 094530 y 094555: conserva bloques alternados de punto horizontal y grupos de pequeños poros verticales. La corrección redujo algo el relieve, pero el macro sigue estilizando el hilo más redondo que el original; debe revisarse finura con usuario. Filas planas paralelas al horizonte.",
+          "variants": [
+            {
+              "path": "public/assets/adidas/trama.webp",
+              "bytes": 437682,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/adidas/trama-960.webp",
+              "bytes": 223658,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/adidas/trama-640.webp",
+              "bytes": 96752,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "contraluz",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-888fb67a-8dc1-45b3-bc26-71399a1a3ccd.png",
+          "prompt": "Use case: product-mockup. Asset for HDM fabric customer catalog. Input 1 and 2 are ORIGINAL PHOTOS and sole authority for textile construction. The original ADIDAS-reference material is a fine white synthetic sports jacquard knit. Reproduce its small repeating compact rectangular panels with tiny horizontal stitch rows, narrow double vertical rib groups punctuated by several slim elongated pores; the groups alternate between rows making an offset brick-like tessellation. Pores stay small, not large square windows. Cloth is fine and softly textured, not thick rope crochet, not Square grid, not diagonal Nike stair steps. Ignore handwriting, cut edges, green monitor tint and low exposure in reference photos; finished textile is clean neutral white. Light can pass mainly through the tiny open stitches and slits while compact panels remain milky and opaque. Pristine photorealistic 3D studio render with microfine yarn realism, white minimalist surroundings, no hands/fingers, no text/logos/watermarks. Landscape1536x1024, one single image, no montage. Crucial scale and finish: this is thin smooth polyester SPORTS JERSEY, not wool or cotton sweater knit. Yarn is extremely fine smooth microfilament, no fuzz, very low relief. Dense panel stitch rows read mainly as microfine horizontal lines. Panel aspect is roughly square/slightly wider than tall, not elongated vertical rectangles. Rows alternate by half a panel width. Correct the THIRD image keeping its hanging cloth composition and plant left/lamp right. Reconstruct MUCH FINER SMOOTHER microfilament sports textile with low relief, flatter nearly-square compact panels and short narrow vertical slit/rib groups alternating across rows as originals1,2. Reduce motif scale so at least 40 repeats across wholecloth; avoid chunky long knit cables. Both plant and lamp fully within frame behind cloth, subtly visible interrupted at tiny pores. Lamp ON amber. Cloth lit neutralwhite. No textarrows.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Se corrigió la primera versión excesivamente gruesa. Esta versión usa muchos motivos pequeños y microperforaciones por las que se perciben planta y lámpara; paneles mayormente blancos. La distribución de poros sigue la fotografía verde, pero intensidad y escala aparente son ilustrativas.",
+          "variants": [
+            {
+              "path": "public/assets/adidas/contraluz.webp",
+              "bytes": 436046,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/adidas/contraluz-960.webp",
+              "bytes": 103552,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/adidas/contraluz-640.webp",
+              "bytes": 34214,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prenda",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-f4017b86-6c70-4d78-8784-1e098545eccb.png",
+          "prompt": "Use case: product-mockup. Asset for HDM fabric customer catalog. Input 1 and 2 are ORIGINAL PHOTOS and sole authority for textile construction. The original ADIDAS-reference material is a fine white synthetic sports jacquard knit. Reproduce its small repeating compact rectangular panels with tiny horizontal stitch rows, narrow double vertical rib groups punctuated by several slim elongated pores; the groups alternate between rows making an offset brick-like tessellation. Pores stay small, not large square windows. Cloth is fine and softly textured, not thick rope crochet, not Square grid, not diagonal Nike stair steps. Ignore handwriting, cut edges, green monitor tint and low exposure in reference photos; finished textile is clean neutral white. Light can pass mainly through the tiny open stitches and slits while compact panels remain milky and opaque. Pristine photorealistic 3D studio render with microfine yarn realism, white minimalist surroundings, no hands/fingers, no text/logos/watermarks. Landscape1536x1024, one single image, no montage. Crucial scale and finish: this is thin smooth polyester SPORTS JERSEY, not wool or cotton sweater knit. Yarn is extremely fine smooth microfilament, no fuzz, very low relief. Dense panel stitch rows read mainly as microfine horizontal lines. Panel aspect is roughly square/slightly wider than tall, not elongated vertical rectangles. Rows alternate by half a panel width. Macro product detail lowerhem of a white sportsjersey made from exact originalfinejacquard. Neat double needle seam along lowerthird curlingunderatrightelegantly. Smooththin syntheticcloth gentlefolds; motif subtle realistic jersey scale at least30repeatsacross. Tiny grouped verticalslits alternating in rows, densehorizontalmicroknitpanels. White seamless studio and softshadows. No arrows.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Patrón rectangular alternado y grupos de poros verticales reconocibles. Dobladillo limpio y doble costura, sin manos. No hay referencia de una prenda Adidas confeccionada; costura y caída son ilustrativas. Hilo algo más redondo/simplificado que original.",
+          "variants": [
+            {
+              "path": "public/assets/adidas/prenda.webp",
+              "bytes": 390732,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/adidas/prenda-960.webp",
+              "bytes": 165174,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/adidas/prenda-640.webp",
+              "bytes": 66572,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "transpirabilidad",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-0fba9769-2bbc-42ef-a10e-9a12a92880b5.png",
+          "prompt": "Use case: product-mockup. Asset for HDM fabric customer catalog. Input 1 and 2 are ORIGINAL PHOTOS and sole authority for textile construction. The original ADIDAS-reference material is a fine white synthetic sports jacquard knit. Reproduce its small repeating compact rectangular panels with tiny horizontal stitch rows, narrow double vertical rib groups punctuated by several slim elongated pores; the groups alternate between rows making an offset brick-like tessellation. Pores stay small, not large square windows. Cloth is fine and softly textured, not thick rope crochet, not Square grid, not diagonal Nike stair steps. Ignore handwriting, cut edges, green monitor tint and low exposure in reference photos; finished textile is clean neutral white. Light can pass mainly through the tiny open stitches and slits while compact panels remain milky and opaque. Pristine photorealistic 3D studio render with microfine yarn realism, white minimalist surroundings, no hands/fingers, no text/logos/watermarks. Landscape1536x1024, one single image, no montage. Crucial scale and finish: this is thin smooth polyester SPORTS JERSEY, not wool or cotton sweater knit. Yarn is extremely fine smooth microfilament, no fuzz, very low relief. Dense panel stitch rows read mainly as microfine horizontal lines. Panel aspect is roughly square/slightly wider than tall, not elongated vertical rectangles. Rows alternate by half a panel width. Close macro of fine white cloth arching gently from bottom-left to top-right, tiny grouped vertical slits and alternating dense horizontal-knit rectangles seen clearly. Add exactly THREE elegant thin translucent white airflow arrows curving from lower left toward upper right just above cloth, sparse clean diagram overlay. Fine smooth lowrelief yarn, pores as reference. No words and no other graphics. Soft studio whitebackground.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Tres flechas limpias sobre macro; se conservan bloques densos y poros verticales agrupados, sin inventar grandes ventanas. Macro resulta algo más redondeado que foto original, pendiente de revisión de finura.",
+          "variants": [
+            {
+              "path": "public/assets/adidas/transpirabilidad.webp",
+              "bytes": 280854,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/adidas/transpirabilidad-960.webp",
+              "bytes": 149354,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/adidas/transpirabilidad-640.webp",
+              "bytes": 76714,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "secado",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-3322b844-06e5-4d43-90a6-5c3e64decbce.png",
+          "prompt": "Use case: product-mockup. Asset for HDM fabric customer catalog. Input 1 and 2 are ORIGINAL PHOTOS and sole authority for textile construction. The original ADIDAS-reference material is a fine white synthetic sports jacquard knit. Reproduce its small repeating compact rectangular panels with tiny horizontal stitch rows, narrow double vertical rib groups punctuated by several slim elongated pores; the groups alternate between rows making an offset brick-like tessellation. Pores stay small, not large square windows. Cloth is fine and softly textured, not thick rope crochet, not Square grid, not diagonal Nike stair steps. Ignore handwriting, cut edges, green monitor tint and low exposure in reference photos; finished textile is clean neutral white. Light can pass mainly through the tiny open stitches and slits while compact panels remain milky and opaque. Pristine photorealistic 3D studio render with microfine yarn realism, white minimalist surroundings, no hands/fingers, no text/logos/watermarks. Landscape1536x1024, one single image, no montage. Crucial scale and finish: this is thin smooth polyester SPORTS JERSEY, not wool or cotton sweater knit. Yarn is extremely fine smooth microfilament, no fuzz, very low relief. Dense panel stitch rows read mainly as microfine horizontal lines. Panel aspect is roughly square/slightly wider than tall, not elongated vertical rectangles. Rows alternate by half a panel width. Refined macro of lower hem of a white sportsjersey hanging freely, gentle light drape curling toward viewer, double needle seam horizontal near lowerthird. Exact fine alternating rectangular jacquard with tiny grouped vertical slits remains recognizable but subtle realistic smallscale, 30+repeatsacross. Pure clean white and lightgray studio background, airy soft shadows suggest hangingdry, no waterdrops no steam no arrows no hands no clips.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Caída y dobladillo suaves, patrón alternado identificable, pequeños poros en sus grupos, sin manos. Una imagen estática no demuestra tiempo de secado; representación visual de propiedad aportada por usuario.",
+          "variants": [
+            {
+              "path": "public/assets/adidas/secado.webp",
+              "bytes": 318082,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/adidas/secado-960.webp",
+              "bytes": 142380,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/adidas/secado-640.webp",
+              "bytes": 59414,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "resistencia",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-227f4324-7f76-4fdd-bdbb-fec1dc20c8c0.png",
+          "prompt": "Use case: product-mockup. Asset for HDM fabric customer catalog. Input 1 and 2 are ORIGINAL PHOTOS and sole authority for textile construction. The original ADIDAS-reference material is a fine white synthetic sports jacquard knit. Reproduce its small repeating compact rectangular panels with tiny horizontal stitch rows, narrow double vertical rib groups punctuated by several slim elongated pores; the groups alternate between rows making an offset brick-like tessellation. Pores stay small, not large square windows. Cloth is fine and softly textured, not thick rope crochet, not Square grid, not diagonal Nike stair steps. Ignore handwriting, cut edges, green monitor tint and low exposure in reference photos; finished textile is clean neutral white. Light can pass mainly through the tiny open stitches and slits while compact panels remain milky and opaque. Pristine photorealistic 3D studio render with microfine yarn realism, white minimalist surroundings, no hands/fingers, no text/logos/watermarks. Landscape1536x1024, one single image, no montage. Crucial scale and finish: this is thin smooth polyester SPORTS JERSEY, not wool or cotton sweater knit. Yarn is extremely fine smooth microfilament, no fuzz, very low relief. Dense panel stitch rows read mainly as microfine horizontal lines. Panel aspect is roughly square/slightly wider than tall, not elongated vertical rectangles. Rows alternate by half a panel width. White textile under MODERATE diagonal tension between unseen off-frame lowerleft and upperright pulling points, in a clean polished 3D studio. Two small elegant mutedgray arrows in opposite directions near extreme lowerleft and upperright indicate pulling. Only moderate modest stretch: the alternating compact rectangular jacquard panels elongate slightly but remain connected across in both directions, groups of tiny slits intact. Smooth taut center, gentle gathered folds around it. No hands fingers clamps or other tools. Avoid implying elastane/lycra expansion, avoid ripped textile, preserve exact originalknit.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Tensión moderada con dos flechas, sin manos y con continuidad de bloques, no extensión extrema tipo Lycra. Fotos originales estáticas no permiten cuantificar elasticidad, por lo que es ilustrativa.",
+          "variants": [
+            {
+              "path": "public/assets/adidas/resistencia.webp",
+              "bytes": 508974,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/adidas/resistencia-960.webp",
+              "bytes": 220280,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/adidas/resistencia-640.webp",
+              "bytes": 97212,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        },
+        {
+          "name": "contraluz-tenue",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-fb324de8-f52f-4645-afd9-f39de311978c.png",
+          "prompt": "Use case: lighting-weather. FIRST image is EDIT TARGET. SECOND image is ORIGINAL fabric transmission reference only. Create low-background-intensity alternate for a slider: keep FIRST IMAGE pixel-registered as closely as possible, same 1536x1024 framing, camera, fabric folds, repeat size, all microknit geometry, white foreground illumination and shadows. Change ONLY objects and lighting behind the cloth: switch the lamp OFF, remove its amber glow, make plant and pot extremely faint while remaining in identical positions. The white fabric surface stays equally bright, not dimmed. The fabric is Adidas-type fine synthetic sports jacquard with alternating rectangular horizontal-knit panels and grouped tiny vertical slits; preserve EXACT texture from firstframe. No new folds no camera movement no global darkening no text.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Comparada visualmente con alto: encuadre, pliegues y repetición se mantienen, lámpara sin ámbar y planta mucho más tenue. Posible mínima variación de microdetalle por generación; no es medición física.",
+          "variants": [
+            {
+              "path": "public/assets/adidas/contraluz-tenue.webp",
+              "bytes": 320198,
+              "size": [
+                1536,
+                1024
+              ]
+            },
+            {
+              "path": "public/assets/adidas/contraluz-tenue-960.webp",
+              "bytes": 72562,
+              "size": [
+                960,
+                640
+              ]
+            },
+            {
+              "path": "public/assets/adidas/contraluz-tenue-640.webp",
+              "bytes": 25262,
+              "size": [
+                640,
+                427
+              ]
+            }
+          ]
+        }
+      ],
+      "discarded": [
+        {
+          "name": "tramaRejected",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-3f3aec29-2a0f-4ae1-bf5b-ebd199718720.png",
+          "prompt": "Use case: product-mockup. Asset for HDM fabric customer catalog. Input 1 and 2 are ORIGINAL PHOTOS and sole authority for textile construction. The original ADIDAS-reference material is a fine white synthetic sports jacquard knit. Reproduce its small repeating compact rectangular panels with tiny horizontal stitch rows, narrow double vertical rib groups punctuated by several slim elongated pores; the groups alternate between rows making an offset brick-like tessellation. Pores stay small, not large square windows. Cloth is fine and softly textured, not thick rope crochet, not Square grid, not diagonal Nike stair steps. Ignore handwriting, cut edges, green monitor tint and low exposure in reference photos; finished textile is clean neutral white. Light can pass mainly through the tiny open stitches and slits while compact panels remain milky and opaque. Pristine photorealistic 3D studio render with microfine yarn realism, white minimalist surroundings, no hands/fingers, no text/logos/watermarks. Landscape1536x1024, one single image, no montage. Show an entirely FLAT planar close-up filled edge to edge by the textile, front-on orthographic view, all repeating rows exactly parallel to horizon. Uniform fine scale: about 16 rectangular panels across. Soft neutral grazing illumination reveals the small double rib divisions and fine horizontal knit. No folds, no objects, no arrows, no vignette.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Descartada: hilo demasiado grueso."
+        },
+        {
+          "name": "contraluzRejected",
+          "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-662ed4c1-d172-4d6e-8b35-c8fed2f9a9de.png",
+          "prompt": "Use case: product-mockup. Asset for HDM fabric customer catalog. Input 1 and 2 are ORIGINAL PHOTOS and sole authority for textile construction. The original ADIDAS-reference material is a fine white synthetic sports jacquard knit. Reproduce its small repeating compact rectangular panels with tiny horizontal stitch rows, narrow double vertical rib groups punctuated by several slim elongated pores; the groups alternate between rows making an offset brick-like tessellation. Pores stay small, not large square windows. Cloth is fine and softly textured, not thick rope crochet, not Square grid, not diagonal Nike stair steps. Ignore handwriting, cut edges, green monitor tint and low exposure in reference photos; finished textile is clean neutral white. Light can pass mainly through the tiny open stitches and slits while compact panels remain milky and opaque. Pristine photorealistic 3D studio render with microfine yarn realism, white minimalist surroundings, no hands/fingers, no text/logos/watermarks. Landscape1536x1024, one single image, no montage. White fabric panel hangs in a few gentle vertical folds across the complete foreground. Behind it at left stands a small elegant white ceramic potted green plant and at right a switched-on small warm amber table lamp with simple cylindrical shade, both softly visible ONLY as faint interrupted color traces through tiny slit pores/open knit stitches. Material is translucent at its actual small pores, NOT broad transparent panels. Keep the denser rectangular panels opaque milky white. Bright neutral studio-lit foreground remains white. Refined photorealism and subtle translucency, no strong silhouette, no black bottle, no arrows. Composition and fabric grid remain level to horizon except natural fold curvature.",
+          "originals": [
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094530.jpg",
+            "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/ADIDAS/20261102_094555.jpg"
+          ],
+          "review": "Descartada: hilo demasiado grueso."
+        }
+      ]
+    },
+    [
+      {
+        "name": "trama",
+        "prompt": "Use case: product-mockup. HDM fabric catalog individual image, landscape 1536x1024. Authoritative original material references: image 1 dark-background macro, image 2 green backlight photograph. White synthetic basketball knit, NOT dyed purple/green (those casts come from original lighting). Faithfully match rounded vertically elongated OVAL apertures, spaced generously, alternating staggered rows on dense finely knitted low-relief textile with much smaller knit pores. Horizontal rows parallel horizon. No square grid, no ribbed stripes, no honeycomb, no polygonal holes. Clean premium photorealistic 3D studio render, soft neutral white illumination, realistic fine thread detail, white-on-white, no text, no logos, no hands, no watermark. Scene: strictly flat textile swatch filling frame, orthographic face-on macro at moderate magnification, no folds, no garment seams, perfectly level horizontal pattern rows, subtle dark grey softly defocused backing visible inside true oval apertures, preserve the real open-area proportion and spacing. The sample is white and thin, do not make it thick foam or chunky crocheted mesh.",
+        "originalReferences": [
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_093957.jpg",
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_094022.jpg"
+        ],
+        "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-e402de4b-34aa-4782-a6c4-740c8c5b254d.png",
+        "tool": "image_gen",
+        "review": {
+          "matches": [
+            "Óvalos verticales grandes en filas horizontales alternadas",
+            "Microtejido continuo entre los óvalos",
+            "Sin manos ni marcas; blanco limpio; prenda con doble costura"
+          ],
+          "limitations": [
+            "Escala física de los poros no medida; macro ilustrativa",
+            "La iluminación blanca de estudio hace el hilo más evidente que en las fotos oscuras originales",
+            "Regularidad de los óvalos idealizada ligeramente por el render"
+          ]
+        },
+        "assets": [
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/trama.webp",
+            "bytes": 477840,
+            "width": 1536
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/trama-960.webp",
+            "bytes": 229482,
+            "width": 960
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/trama-640.webp",
+            "bytes": 117420,
+            "width": 640
+          }
+        ]
+      },
+      {
+        "name": "prenda",
+        "prompt": "Use case: product-mockup. HDM fabric catalog individual image, landscape 1536x1024. Authoritative original material references: image 1 dark-background macro, image 2 green backlight photograph. White synthetic basketball knit, NOT dyed purple/green (those casts come from original lighting). Faithfully match rounded vertically elongated OVAL apertures, spaced generously, alternating staggered rows on dense finely knitted low-relief textile with much smaller knit pores. Horizontal rows parallel horizon. No square grid, no ribbed stripes, no honeycomb, no polygonal holes. Clean premium photorealistic 3D studio render, soft neutral white illumination, realistic fine thread detail, white-on-white, no text, no logos, no hands, no watermark. Scene: extremely clean macro of the lower hem of a white basketball singlet made from this exact perforated knit. Folded double stitched hem sweeping gently across bottom third, slight lift at right revealing underside, white studio surface, all fabric and stitching immaculate. Apertures remain vertically oval in staggered rows above seam; doubled hem shows denser layered fabric. Detailed fine white double needle stitching, elegant soft folds. No full garment, no other textile texture.",
+        "originalReferences": [
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_093957.jpg",
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_094022.jpg"
+        ],
+        "source": "/workspace/scratch/35a2c2ee7b18/work/nba-prenda-generated.png",
+        "tool": "image_gen",
+        "review": {
+          "matches": [
+            "Óvalos verticales grandes en filas horizontales alternadas",
+            "Microtejido continuo entre los óvalos",
+            "Sin manos ni marcas; blanco limpio; prenda con doble costura"
+          ],
+          "limitations": [
+            "Escala física de los poros no medida; macro ilustrativa",
+            "La iluminación blanca de estudio hace el hilo más evidente que en las fotos oscuras originales",
+            "Regularidad de los óvalos idealizada ligeramente por el render"
+          ]
+        },
+        "assets": [
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/prenda.webp",
+            "bytes": 331664,
+            "width": 1536
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/prenda-960.webp",
+            "bytes": 166112,
+            "width": 960
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/prenda-640.webp",
+            "bytes": 81492,
+            "width": 640
+          }
+        ]
+      },
+      {
+        "name": "contraluz",
+        "prompt": "Use case: product-mockup. HDM fabric catalog individual image, landscape 1536x1024. Authoritative original material references: image 1 dark-background macro, image 2 green backlight photograph. White synthetic basketball knit, NOT dyed purple/green (those casts come from original lighting). Faithfully match rounded vertically elongated OVAL apertures, spaced generously, alternating staggered rows on dense finely knitted low-relief textile with much smaller knit pores. Horizontal rows parallel horizon. No square grid, no ribbed stripes, no honeycomb, no polygonal holes. Clean premium photorealistic 3D studio render, soft neutral white illumination, realistic fine thread detail, white-on-white, no text, no logos, no hands, no watermark. Scene: white hanging textile panel with gentle broad vertical folds, a minimal matte white potted green plant at left and a softly glowing warm small table lamp at right behind the fabric. Fabric fills 95% frame. Show their colored silhouettes primarily THROUGH THE TRUE OVAL APERTURES, little passage through dense knit. At this medium close view holes are small relative to frame, do not overscale them. Real holes remain open vertically oval in alternating rows. Background objects soft but legible through openings; foreground crisp softly studio lit white. No other objects.",
+        "originalReferences": [
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_093957.jpg",
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_094022.jpg"
+        ],
+        "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-609d5e77-5ca6-4f61-a098-bb063eea3d7c.png",
+        "tool": "image_gen",
+        "review": {
+          "matches": [
+            "Óvalos verticales grandes en filas horizontales alternadas",
+            "Microtejido continuo entre los óvalos",
+            "Sin manos ni marcas; blanco limpio; prenda con doble costura"
+          ],
+          "limitations": [
+            "Escala física de los poros no medida; macro ilustrativa",
+            "La iluminación blanca de estudio hace el hilo más evidente que en las fotos oscuras originales",
+            "Regularidad de los óvalos idealizada ligeramente por el render"
+          ]
+        },
+        "assets": [
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/contraluz.webp",
+            "bytes": 407526,
+            "width": 1536
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/contraluz-960.webp",
+            "bytes": 184234,
+            "width": 960
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/contraluz-640.webp",
+            "bytes": 83218,
+            "width": 640
+          }
+        ]
+      },
+      {
+        "name": "transpirabilidad",
+        "prompt": "Use case: product-mockup. HDM fabric catalog individual image, landscape 1536x1024. Authoritative original material references: image 1 dark-background macro, image 2 green backlight photograph. White synthetic basketball knit, NOT dyed purple/green (those casts come from original lighting). Faithfully match rounded vertically elongated OVAL apertures, spaced generously, alternating staggered rows on dense finely knitted low-relief textile with much smaller knit pores. Horizontal rows parallel horizon. No square grid, no ribbed stripes, no honeycomb, no polygonal holes. Clean premium photorealistic 3D studio render, soft neutral white illumination, realistic fine thread detail, white-on-white, no text, no logos, no hands, no watermark. Scene: extreme macro of fabric with one soft low diagonal fold, the oval perforations and surrounding fine knit fully visible in front focal plane. Three elegant thin semitransparent white arrows sweep gently to upper-right across the fabric, illustrating airflow through its true apertures, no labels. Preserve real aperture shape and spacing as in originals. White background, subtle pale grey hole interiors for clear contrast. No droplets, no hands, no scientific unsupported claims.",
+        "originalReferences": [
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_093957.jpg",
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_094022.jpg"
+        ],
+        "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-853c998f-8447-4827-80fe-a847576eca78.png",
+        "tool": "image_gen",
+        "review": {
+          "matches": [
+            "Óvalos verticales grandes en filas horizontales alternadas",
+            "Microtejido continuo entre los óvalos",
+            "Sin manos ni marcas; blanco limpio; prenda con doble costura"
+          ],
+          "limitations": [
+            "Escala física de los poros no medida; macro ilustrativa",
+            "La iluminación blanca de estudio hace el hilo más evidente que en las fotos oscuras originales",
+            "Regularidad de los óvalos idealizada ligeramente por el render"
+          ]
+        },
+        "assets": [
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/transpirabilidad.webp",
+            "bytes": 317456,
+            "width": 1536
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/transpirabilidad-960.webp",
+            "bytes": 170978,
+            "width": 960
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/transpirabilidad-640.webp",
+            "bytes": 91426,
+            "width": 640
+          }
+        ]
+      },
+      {
+        "name": "secado",
+        "prompt": "Use case: product-mockup. HDM fabric catalog individual image, landscape 1536x1024. Authoritative original material references: image 1 dark-background macro, image 2 green backlight photograph. White synthetic basketball knit, NOT dyed purple/green (those casts come from original lighting). Faithfully match rounded vertically elongated OVAL apertures, spaced generously, alternating staggered rows on dense finely knitted low-relief textile with much smaller knit pores. Horizontal rows parallel horizon. No square grid, no ribbed stripes, no honeycomb, no polygonal holes. Clean premium photorealistic 3D studio render, soft neutral white illumination, realistic fine thread detail, white-on-white, no text, no logos, no hands, no watermark. Scene: close-up lower hem of a white basketball singlet suspended freely in an immaculate white studio. Double stitched curved bottom edge floats across lower half with broad soft realistic folds, gentle airy drape, no clothesline, hanger or hands visible. Tiny oval apertures in staggered rows must remain visible at garment scale, not giant holes. Matte thin synthetic cloth, not thick wool. No droplets or speed icons.",
+        "originalReferences": [
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_093957.jpg",
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_094022.jpg"
+        ],
+        "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-4533ff2d-459a-43ae-b429-eeae0de2a31a.png",
+        "tool": "image_gen",
+        "review": {
+          "matches": [
+            "Óvalos verticales grandes en filas horizontales alternadas",
+            "Microtejido continuo entre los óvalos",
+            "Sin manos ni marcas; blanco limpio; prenda con doble costura"
+          ],
+          "limitations": [
+            "Escala física de los poros no medida; macro ilustrativa",
+            "La iluminación blanca de estudio hace el hilo más evidente que en las fotos oscuras originales",
+            "Regularidad de los óvalos idealizada ligeramente por el render"
+          ]
+        },
+        "assets": [
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/secado.webp",
+            "bytes": 273612,
+            "width": 1536
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/secado-960.webp",
+            "bytes": 104536,
+            "width": 960
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/secado-640.webp",
+            "bytes": 39030,
+            "width": 640
+          }
+        ]
+      },
+      {
+        "name": "resistencia",
+        "prompt": "Use case: product-mockup. HDM fabric catalog individual image, landscape 1536x1024. Authoritative original material references: image 1 dark-background macro, image 2 green backlight photograph. White synthetic basketball knit, NOT dyed purple/green (those casts come from original lighting). Faithfully match rounded vertically elongated OVAL apertures, spaced generously, alternating staggered rows on dense finely knitted low-relief textile with much smaller knit pores. Horizontal rows parallel horizon. No square grid, no ribbed stripes, no honeycomb, no polygonal holes. Clean premium photorealistic 3D studio render, soft neutral white illumination, realistic fine thread detail, white-on-white, no text, no logos, no hands, no watermark. Scene: white perforated fabric under only MILD diagonal tension from lower left to upper right, invisible supports beyond frame. Shallow tension folds across center and two small dark-grey outward arrows near opposite corners. NO hands, clamps, fingers. Keep real oval holes mostly unchanged with only slight elongation; surrounding fine knit continuous, not extreme elastic lycra, not ripped. Broad white studio background and soft shadows. This depicts moderate pulling of durable basketball fabric, not a claim of high elasticity.",
+        "originalReferences": [
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_093957.jpg",
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_094022.jpg"
+        ],
+        "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-55adf98b-b924-448c-8409-c48e021615a6.png",
+        "tool": "image_gen",
+        "review": {
+          "matches": [
+            "Óvalos verticales grandes en filas horizontales alternadas",
+            "Microtejido continuo entre los óvalos",
+            "Sin manos ni marcas; blanco limpio; prenda con doble costura"
+          ],
+          "limitations": [
+            "Escala física de los poros no medida; macro ilustrativa",
+            "La iluminación blanca de estudio hace el hilo más evidente que en las fotos oscuras originales",
+            "Regularidad de los óvalos idealizada ligeramente por el render"
+          ]
+        },
+        "assets": [
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/resistencia.webp",
+            "bytes": 425810,
+            "width": 1536
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/resistencia-960.webp",
+            "bytes": 208690,
+            "width": 960
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/resistencia-640.webp",
+            "bytes": 96234,
+            "width": 640
+          }
+        ]
+      },
+      {
+        "name": "contraluz-tenue",
+        "prompt": "Use case: lighting-weather precise edit. Image1 EDIT TARGET, exact approved NBA fabric studio view. Image2 original macro backlight reference of this same knit, authoritative material geometry only. Create LOW BACKGROUND ILLUMINATION frame for slider. Preserve image1 EXACT camera, crop 1536x1024, ALL folds, every oval hole and knit stitch, cloth lighting/shadows/white brightness. Do NOT move or reshape anything. Change ONLY the illumination of objects BEHIND fabric: turn off the warm lamp at right, reduce light on plant at left until the green silhouette through holes becomes extremely faint. The dense white textile remains front-lit with same studio illumination and grey shading. No global dimming, no transparency changes, no altered apertures, no texture drift. It will be overlaid on original at 50% so pixel registration is crucial. No text or new objects.",
+        "originalReferences": [
+          "/workspace/scratch/35a2c2ee7b18/generated_images/exec-609d5e77-5ca6-4f61-a098-bb063eea3d7c.png",
+          "/workspace/scratch/35a2c2ee7b18/work/references/NUEVAS REFERENCIAS/NBA/20261102_094022.jpg"
+        ],
+        "source": "/workspace/scratch/35a2c2ee7b18/generated_images/exec-162120df-2dd0-45cb-8ae0-90817548d58f.png",
+        "tool": "image_gen",
+        "review": {
+          "matches": [
+            "Óvalos verticales grandes en filas horizontales alternadas",
+            "Microtejido continuo entre los óvalos",
+            "Sin manos ni marcas; blanco limpio; prenda con doble costura"
+          ],
+          "limitations": [
+            "Escala física de los poros no medida; macro ilustrativa",
+            "La iluminación blanca de estudio hace el hilo más evidente que en las fotos oscuras originales",
+            "Regularidad de los óvalos idealizada ligeramente por el render"
+          ]
+        },
+        "assets": [
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/contraluz-tenue.webp",
+            "bytes": 313966,
+            "width": 1536
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/contraluz-tenue-960.webp",
+            "bytes": 157230,
+            "width": 960
+          },
+          {
+            "path": "/workspace/scratch/35a2c2ee7b18/hdm-telas-clientes/public/assets/nba/contraluz-tenue-640.webp",
+            "bytes": 75008,
+            "width": 640
+          }
+        ]
+      }
+    ]
+  ]
+}

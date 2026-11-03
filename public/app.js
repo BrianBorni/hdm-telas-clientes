@@ -136,7 +136,7 @@ function renderDetail(fabric) {
     </section>
     <footer class="detail-footer">
       <div><p class="material-notes">${fabric.notes.map(note => `<span>${escapeHTML(note)}</span>`).join('')}</p>
-      <p class="image-note">Imágenes ilustrativas del tejido. El estiramiento representa la tela bajo tensión.</p></div>
+      <p class="image-note">Imágenes ilustrativas del tejido.${fabric.features.some(item => ['resistencia', 'elasticidad'].includes(item.id)) ? ' El estiramiento representa la tela bajo tensión.' : ''}</p></div>
       <button class="other-fabrics" type="button" id="other-fabrics">${back}<span>Ver otras telas</span></button>
     </footer>`;
   detailView.querySelectorAll('[data-image-index]').forEach(button => {

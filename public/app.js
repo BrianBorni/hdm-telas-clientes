@@ -80,6 +80,8 @@ function withMediaRevision(fabric, revision) {
     gallery: fabric.gallery.map(photo), features: fabric.features.map(photo) };
 }
 
+const fabricLabel = fabric => [fabric.category, fabric.name].filter(Boolean).join(' ');
+
 function priceMarkup(fabric) {
   return `<div class="prices">
     <div class="price"><span class="price-label">Camiseta</span><span class="price-amount">$${money.format(fabric.prices.shirt)}</span></div>
@@ -91,12 +93,12 @@ function renderCatalog() {
   grid.classList.toggle('single', fabrics.length === 1);
   grid.innerHTML = fabrics.map((fabric, index) => `
     <article class="reveal">
-      <a class="fabric-card" href="#${encodeURIComponent(fabric.id)}" data-fabric="${escapeHTML(fabric.id)}" aria-label="Ver ${escapeHTML(fabric.category)} ${escapeHTML(fabric.name)}, camiseta $${money.format(fabric.prices.shirt)}, conjunto $${money.format(fabric.prices.set)}">
+      <a class="fabric-card" href="#${encodeURIComponent(fabric.id)}" data-fabric="${escapeHTML(fabric.id)}" aria-label="Ver ${escapeHTML(fabricLabel(fabric))}, camiseta $${money.format(fabric.prices.shirt)}, conjunto $${money.format(fabric.prices.set)}">
         <div class="image-wrap">
-          ${imageMarkup(fabric.cover, `Trama de ${fabric.category} ${fabric.name}`, { eager: index < 3, sizes: fabrics.length === 1 ? '(max-width: 700px) calc(100vw - 44px), 490px' : '(max-width: 700px) 46vw, 33vw', className: 'cover' })}
+          ${imageMarkup(fabric.cover, `Trama de ${fabricLabel(fabric)}`, { eager: index < 3, sizes: fabrics.length === 1 ? '(max-width: 700px) calc(100vw - 44px), 490px' : '(max-width: 700px) 46vw, 33vw', className: 'cover' })}
           <span class="open-circle">${arrow}</span>
         </div>
-        <h2 class="card-name">${escapeHTML(fabric.category)} ${escapeHTML(fabric.name)}</h2>
+        <h2 class="card-name">${escapeHTML(fabricLabel(fabric))}</h2>
         ${priceMarkup(fabric)}
       </a>
     </article>`).join('');
@@ -153,7 +155,7 @@ function renderDetail(fabric) {
   viewerItems = [...fabric.gallery, ...fabric.features];
   detailView.innerHTML = `
     <div class="detail-top">
-      <div><p class="eyebrow">${escapeHTML(fabric.category)}</p><h1 id="fabric-title" tabindex="-1">${escapeHTML(fabric.name)}</h1></div>
+      <div>${fabric.category ? `<p class="eyebrow">${escapeHTML(fabric.category)}</p>` : ''}<h1 id="fabric-title" tabindex="-1">${escapeHTML(fabric.name)}</h1></div>
       <div class="detail-prices">${priceMarkup(fabric)}<p class="unit-note">Por unidad · ARS</p></div>
     </div>
     <div class="material-gallery" id="material-gallery" aria-label="Vistas de ${escapeHTML(fabric.name)}">
@@ -361,7 +363,7 @@ function syncBacklightReady() {
 function updateViewer() {
   setViewerZoom(100, true);
   const item = viewerItems[viewerIndex];
-  $('#viewer-fabric').textContent = `${activeFabric.category} ${activeFabric.name}`;
+  $('#viewer-fabric').textContent = fabricLabel(activeFabric);
   $('#viewer-title').textContent = item.title;
   viewerImage.src = item.src;
   viewerImage.alt = item.alt;

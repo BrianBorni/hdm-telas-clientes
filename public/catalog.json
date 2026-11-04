@@ -9,8 +9,8 @@
   "fabrics": [
     {
       "id": "poliester",
-      "name": "Poliéster deportivo",
-      "category": "Tela deportiva",
+      "name": "Poliéster Deportivo",
+      "category": "",
       "published": true,
       "prices": {
         "shirt": 17000,
@@ -22,20 +22,20 @@
           "id": "trama",
           "title": "Trama",
           "src": "assets/poliester/trama.webp",
-          "alt": "Trama blanca de Poliéster deportivo: punto fino continuo, sin grandes perforaciones."
+          "alt": "Trama blanca de Poliéster Deportivo: punto fino continuo, sin grandes perforaciones."
         },
         {
           "id": "contraluz",
           "title": "A contraluz",
           "src": "assets/poliester/contraluz.webp",
-          "alt": "Representación de Poliéster deportivo con una planta y una lámpara detrás de la tela.",
+          "alt": "Representación de Poliéster Deportivo con una planta y una lámpara detrás de la tela.",
           "backlightBase": "assets/poliester/contraluz-tenue.webp"
         },
         {
           "id": "prenda",
           "title": "Detalle de prenda",
           "src": "assets/poliester/prenda.webp",
-          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en Poliéster deportivo."
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en Poliéster Deportivo."
         }
       ],
       "features": [
@@ -273,8 +273,8 @@
     },
     {
       "id": "dryfit",
-      "name": "Dryfit",
-      "category": "Tela deportiva",
+      "name": "DryFit",
+      "category": "Microperforada",
       "published": true,
       "prices": {
         "shirt": 23000,
@@ -286,20 +286,20 @@
           "id": "trama",
           "title": "Trama",
           "src": "assets/dryfit/trama.webp",
-          "alt": "Trama blanca de Dryfit: punto compacto con grupos de pequeñas ranuras."
+          "alt": "Trama blanca de DryFit: punto compacto con grupos de pequeñas ranuras."
         },
         {
           "id": "contraluz",
           "title": "A contraluz",
           "src": "assets/dryfit/contraluz.webp",
-          "alt": "Representación de Dryfit con una planta y una lámpara detrás de la tela.",
+          "alt": "Representación de DryFit con una planta y una lámpara detrás de la tela.",
           "backlightBase": "assets/dryfit/contraluz-tenue.webp"
         },
         {
           "id": "prenda",
           "title": "Detalle de prenda",
           "src": "assets/dryfit/prenda.webp",
-          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en Dryfit."
+          "alt": "Macro del dobladillo y la costura de una prenda confeccionada en DryFit."
         }
       ],
       "features": [
@@ -307,21 +307,21 @@
           "id": "transpirabilidad",
           "title": "Transpirabilidad",
           "src": "assets/dryfit/transpirabilidad.webp",
-          "alt": "Macro de Dryfit con flechas ilustrativas del paso de aire por sus perforaciones.",
+          "alt": "Macro de DryFit con flechas ilustrativas del paso de aire por sus perforaciones.",
           "description": "Su trama favorece la ventilación."
         },
         {
           "id": "secado",
           "title": "Secado rápido",
           "src": "assets/dryfit/secado.webp",
-          "alt": "Dobladillo de Dryfit suspendido, como representación del secado al aire.",
+          "alt": "Dobladillo de DryFit suspendido, como representación del secado al aire.",
           "description": "Tejido de secado rápido."
         },
         {
           "id": "resistencia",
           "title": "Resistencia",
           "src": "assets/dryfit/resistencia.webp",
-          "alt": "Dryfit bajo tensión moderada, con dos flechas y sin manos. El tejido conserva su estructura.",
+          "alt": "DryFit bajo tensión moderada, con dos flechas y sin manos. El tejido conserva su estructura.",
           "description": "Para uso deportivo intensivo."
         }
       ],
